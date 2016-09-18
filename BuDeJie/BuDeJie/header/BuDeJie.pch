@@ -1,0 +1,40 @@
+//
+//  BuDeJie.pch
+//  BuDeJie
+//
+//  Created by 熊欣 on 16/9/13.
+//  Copyright © 2016年 熊欣. All rights reserved.
+//
+
+#ifndef BuDeJie_pch
+#define BuDeJie_pch
+
+/** 导入公用头文件*/
+#import "BuDeJie_Header.h"
+
+
+/** 导入全局常量*/
+#import "BRGlobalConstants.h"
+
+
+/** 正常背景色*/
+#define DEFAULT_BGCOLOR ([UIColor whiteColor])
+
+/** 夜晚模式*/
+#define NIGHT_BGCOLOR ([UIColor blackColor])
+
+
+/** 打印*/
+#ifdef DEBUG
+
+#define BRLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define BRLog(...)
+
+#endif
+
+
+
+#endif /* BuDeJie_pch */
