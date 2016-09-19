@@ -17,24 +17,41 @@
 #import "BRGlobalConstants.h"
 
 
+/*************屏幕适配*************/
+#define BRSCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
+
+#define BRSCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define IS_IPHONE6P     (BRSCREEN_HEIGHT == 736)
+
+#define IS_IPHONE6      (BRSCREEN_HEIGHT == 667)
+
+#define IS_IPHONE5      (BRSCREEN_HEIGHT == 568)
+
+#define IS_IPHONE4      (BRSCREEN_HEIGHT == 480)
+/*************屏幕适配*************/
+
+#define BRAPPLICATION   ([UIApplication sharedApplication])
+
+
 /** 正常背景色*/
 #define DEFAULT_BGCOLOR ([UIColor whiteColor])
 
 /** 夜晚模式*/
-#define NIGHT_BGCOLOR ([UIColor blackColor])
+#define NIGHT_BGCOLOR   ([UIColor blackColor])
 
 
 /** 打印*/
 #ifdef DEBUG
 
-#define BRLog(...) NSLog(__VA_ARGS__)
+#define BRLog(s, ...) NSLog(@"文件名:%@ 所在行:%d \n===================打印内容===================\n%@ ", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
 
 #else
 
-#define BRLog(...)
+#define BRLog(s, ...)
 
 #endif
-
+/** 打印*/
 
 
 #endif /* BuDeJie_pch */

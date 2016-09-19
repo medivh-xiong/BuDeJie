@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "BRMainViewController.h"
+#import "BRAdViewController.h"
 
 @interface AppDelegate ()
 
@@ -30,10 +30,10 @@
 {
     self.window                    = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
-    BRMainViewController *mainVC   = [[BRMainViewController alloc] init];
+    BRAdViewController *adVC       = [[BRAdViewController alloc] init];
 
-    self.window.rootViewController = mainVC;
-    
+    self.window.rootViewController = adVC;
+
     [self.window makeKeyAndVisible];
 }
 

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BRAdViewController">
+            <connections>
+                <outlet property="adView" destination="Awi-kG-0lZ" id="Thg-ot-2Nh"/>
+                <outlet property="launchImage" destination="rcx-wd-Eua" id="q9k-va-R2j"/>
+                <outlet property="skipBtn" destination="nGl-X6-zXL" id="cVQ-H9-CnT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="291" height="559"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rcx-wd-Eua" userLabel="启动图片">
+                    <rect key="frame" x="0.0" y="0.0" width="291" height="559"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awi-kG-0lZ" userLabel="广告界面占位">
+                    <rect key="frame" x="0.0" y="0.0" width="291" height="559"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGl-X6-zXL">
+                    <rect key="frame" x="204" y="25" width="75" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.42489224137931036" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="Nhd-TX-vC2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="跳过（5）">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="jumpAD:" destination="-1" eventType="touchUpInside" id="DqJ-Ui-hkF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rcx-wd-Eua" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0hU-Ck-6hu"/>
+                <constraint firstAttribute="bottom" secondItem="Awi-kG-0lZ" secondAttribute="bottom" id="1eP-8C-Qn1"/>
+                <constraint firstItem="rcx-wd-Eua" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="33k-vc-Ssq"/>
+                <constraint firstItem="Awi-kG-0lZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5Dc-Xo-a9t"/>
+                <constraint firstItem="nGl-X6-zXL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="9a9-Ve-eLu"/>
+                <constraint firstAttribute="bottom" secondItem="rcx-wd-Eua" secondAttribute="bottom" id="HyH-hh-4Fc"/>
+                <constraint firstAttribute="trailing" secondItem="rcx-wd-Eua" secondAttribute="trailing" id="Kyf-6N-1ha"/>
+                <constraint firstItem="Awi-kG-0lZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Q70-6I-n0t"/>
+                <constraint firstAttribute="trailing" secondItem="Awi-kG-0lZ" secondAttribute="trailing" id="mBi-CR-4mJ"/>
+                <constraint firstAttribute="trailing" secondItem="nGl-X6-zXL" secondAttribute="trailing" constant="12" id="rOj-3M-9lc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-21.5" y="111.5"/>
+        </view>
+    </objects>
+</document>

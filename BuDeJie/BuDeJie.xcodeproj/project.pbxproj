@@ -10,6 +10,7 @@
 		5258B45F8963D61B80F7E1E3 /* libPods-BuDeJie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1273E95DCAC1EC991F9D6A9A /* libPods-BuDeJie.a */; };
 		8C05AD181D8927A300D1E113 /* BRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C05AD171D8927A300D1E113 /* BRNavigationController.m */; };
 		8C05AD1F1D892C7700D1E113 /* BRSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C05AD1E1D892C7700D1E113 /* BRSettingViewController.m */; };
+		8C0AA7761D8FB192002CB37C /* BRAdDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0AA7751D8FB192002CB37C /* BRAdDataModel.m */; };
 		8C36192E1D865A2F005036B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C36192D1D865A2F005036B2 /* Assets.xcassets */; };
 		8C3619311D865A2F005036B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C36192F1D865A2F005036B2 /* LaunchScreen.storyboard */; };
 		8C3649E31D869253006973E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3649DD1D869253006973E5 /* AppDelegate.m */; };
@@ -23,8 +24,18 @@
 		8C364A011D87E505006973E5 /* BRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3649FE1D87E505006973E5 /* BRMainViewController.m */; };
 		8C364A041D87EC33006973E5 /* BRTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C364A031D87EC32006973E5 /* BRTabBar.m */; };
 		8C364A0B1D881D19006973E5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C364A0A1D881D19006973E5 /* UIView+Extension.m */; };
-		8C364A101D881E57006973E5 /* BRGlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C364A0F1D881E57006973E5 /* BRGlobalConstants.m */; };
 		8C364A131D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C364A121D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m */; };
+		8CE7BAA51D8E77DE00DDED24 /* BRAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7BAA31D8E77DE00DDED24 /* BRAdViewController.m */; };
+		8CE7BAA61D8E77DE00DDED24 /* BRAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7BAA41D8E77DE00DDED24 /* BRAdViewController.xib */; };
+		8CE7BAC11D8E939D00DDED24 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7BABA1D8E939D00DDED24 /* LaunchImage-568h@2x.png */; };
+		8CE7BAC21D8E939D00DDED24 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7BABB1D8E939D00DDED24 /* LaunchImage-700-568h@2x.png */; };
+		8CE7BAC31D8E939D00DDED24 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7BABC1D8E939D00DDED24 /* LaunchImage-700@2x.png */; };
+		8CE7BAC41D8E939D00DDED24 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7BABD1D8E939D00DDED24 /* LaunchImage-800-667h@2x.png */; };
+		8CE7BAC51D8E939D00DDED24 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7BABE1D8E939D00DDED24 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		8CE7BAC61D8E939D00DDED24 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7BABF1D8E939D00DDED24 /* LaunchImage.png */; };
+		8CE7BAC71D8E939D00DDED24 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7BAC01D8E939D00DDED24 /* LaunchImage@2x.png */; };
+		8CE7BACE1D8E93C200DDED24 /* BRGlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7BACD1D8E93C200DDED24 /* BRGlobalConstants.m */; };
+		8CE7BAD41D8F76F200DDED24 /* BRNetTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7BAD31D8F76F200DDED24 /* BRNetTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +46,9 @@
 		8C05AD171D8927A300D1E113 /* BRNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRNavigationController.m; sourceTree = "<group>"; };
 		8C05AD1D1D892C7700D1E113 /* BRSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSettingViewController.h; sourceTree = "<group>"; };
 		8C05AD1E1D892C7700D1E113 /* BRSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSettingViewController.m; sourceTree = "<group>"; };
+		8C0AA7741D8FB192002CB37C /* BRAdDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAdDataModel.h; sourceTree = "<group>"; };
+		8C0AA7751D8FB192002CB37C /* BRAdDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAdDataModel.m; sourceTree = "<group>"; };
+		8C0AA7781D8FB1D0002CB37C /* Advertisement_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Advertisement_Header.h; sourceTree = "<group>"; };
 		8C36191E1D865A2F005036B2 /* BuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C36192D1D865A2F005036B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C3619301D865A2F005036B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,14 +72,26 @@
 		8C3649FE1D87E505006973E5 /* BRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMainViewController.m; sourceTree = "<group>"; };
 		8C364A021D87EC32006973E5 /* BRTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTabBar.h; sourceTree = "<group>"; };
 		8C364A031D87EC32006973E5 /* BRTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTabBar.m; sourceTree = "<group>"; };
-		8C364A061D881BB7006973E5 /* BuDeJie.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuDeJie.pch; sourceTree = "<group>"; };
 		8C364A091D881D19006973E5 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		8C364A0A1D881D19006973E5 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		8C364A0C1D881D7D006973E5 /* BuDeJie_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuDeJie_Header.h; sourceTree = "<group>"; };
-		8C364A0E1D881E57006973E5 /* BRGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRGlobalConstants.h; sourceTree = "<group>"; };
-		8C364A0F1D881E57006973E5 /* BRGlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRGlobalConstants.m; sourceTree = "<group>"; };
 		8C364A111D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BRBarButtonItem.h"; sourceTree = "<group>"; };
 		8C364A121D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BRBarButtonItem.m"; sourceTree = "<group>"; };
+		8CE7BAA21D8E77DE00DDED24 /* BRAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAdViewController.h; sourceTree = "<group>"; };
+		8CE7BAA31D8E77DE00DDED24 /* BRAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAdViewController.m; sourceTree = "<group>"; };
+		8CE7BAA41D8E77DE00DDED24 /* BRAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRAdViewController.xib; sourceTree = "<group>"; };
+		8CE7BABA1D8E939D00DDED24 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		8CE7BABB1D8E939D00DDED24 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		8CE7BABC1D8E939D00DDED24 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		8CE7BABD1D8E939D00DDED24 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		8CE7BABE1D8E939D00DDED24 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		8CE7BABF1D8E939D00DDED24 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		8CE7BAC01D8E939D00DDED24 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		8CE7BAC91D8E93C200DDED24 /* BuDeJie.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuDeJie.pch; sourceTree = "<group>"; };
+		8CE7BACA1D8E93C200DDED24 /* BuDeJie_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuDeJie_Header.h; sourceTree = "<group>"; };
+		8CE7BACC1D8E93C200DDED24 /* BRGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRGlobalConstants.h; sourceTree = "<group>"; };
+		8CE7BACD1D8E93C200DDED24 /* BRGlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRGlobalConstants.m; sourceTree = "<group>"; };
+		8CE7BAD21D8F76F200DDED24 /* BRNetTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRNetTools.h; sourceTree = "<group>"; };
+		8CE7BAD31D8F76F200DDED24 /* BRNetTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRNetTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +148,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8C0AA7771D8FB1B2002CB37C /* header */ = {
+			isa = PBXGroup;
+			children = (
+				8C0AA7781D8FB1D0002CB37C /* Advertisement_Header.h */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
 		8C3619151D865A2F005036B2 = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +188,8 @@
 		8C3619211D865A2F005036B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8C364A051D881B92006973E5 /* header */,
+				8CE7BAB81D8E939D00DDED24 /* Resoureces */,
+				8CE7BAC81D8E93C200DDED24 /* Header */,
 				8C3649DE1D869253006973E5 /* main.m */,
 				8C36192F1D865A2F005036B2 /* LaunchScreen.storyboard */,
 			);
@@ -164,14 +199,15 @@
 		8C3649CA1D869253006973E5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8CFE44C81D8E776A001A4ECB /* Advertisement(广告) */,
 				8C3649FB1D87E505006973E5 /* Main */,
 				8C3649CB1D869253006973E5 /* Essence(精华) */,
 				8C3649D71D869253006973E5 /* New(新帖) */,
 				8C3649DF1D869253006973E5 /* Publish(发布) */,
 				8C3649CF1D869253006973E5 /* FriendTrend(关注) */,
 				8C3649D31D869253006973E5 /* Me(我) */,
-				8C3649DB1D869253006973E5 /* Other */,
 				8C05AD191D892C4400D1E113 /* 设置 */,
+				8C3649DB1D869253006973E5 /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -392,16 +428,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8C364A051D881B92006973E5 /* header */ = {
-			isa = PBXGroup;
-			children = (
-				8C364A0D1D881E10006973E5 /* 全局常量 */,
-				8C364A0C1D881D7D006973E5 /* BuDeJie_Header.h */,
-				8C364A061D881BB7006973E5 /* BuDeJie.pch */,
-			);
-			path = header;
-			sourceTree = "<group>";
-		};
 		8C364A071D881C4A006973E5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,17 +442,88 @@
 		8C364A081D881C57006973E5 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				8CE7BAD21D8F76F200DDED24 /* BRNetTools.h */,
+				8CE7BAD31D8F76F200DDED24 /* BRNetTools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		8C364A0D1D881E10006973E5 /* 全局常量 */ = {
+		8CE7BAB81D8E939D00DDED24 /* Resoureces */ = {
 			isa = PBXGroup;
 			children = (
-				8C364A0E1D881E57006973E5 /* BRGlobalConstants.h */,
-				8C364A0F1D881E57006973E5 /* BRGlobalConstants.m */,
+				8CE7BAB91D8E939D00DDED24 /* 启动图片 */,
+			);
+			path = Resoureces;
+			sourceTree = "<group>";
+		};
+		8CE7BAB91D8E939D00DDED24 /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				8CE7BABA1D8E939D00DDED24 /* LaunchImage-568h@2x.png */,
+				8CE7BABB1D8E939D00DDED24 /* LaunchImage-700-568h@2x.png */,
+				8CE7BABC1D8E939D00DDED24 /* LaunchImage-700@2x.png */,
+				8CE7BABD1D8E939D00DDED24 /* LaunchImage-800-667h@2x.png */,
+				8CE7BABE1D8E939D00DDED24 /* LaunchImage-800-Portrait-736h@3x.png */,
+				8CE7BABF1D8E939D00DDED24 /* LaunchImage.png */,
+				8CE7BAC01D8E939D00DDED24 /* LaunchImage@2x.png */,
+			);
+			path = "启动图片";
+			sourceTree = "<group>";
+		};
+		8CE7BAC81D8E93C200DDED24 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8CE7BAC91D8E93C200DDED24 /* BuDeJie.pch */,
+				8CE7BACA1D8E93C200DDED24 /* BuDeJie_Header.h */,
+				8CE7BACB1D8E93C200DDED24 /* 全局常量 */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		8CE7BACB1D8E93C200DDED24 /* 全局常量 */ = {
+			isa = PBXGroup;
+			children = (
+				8CE7BACC1D8E93C200DDED24 /* BRGlobalConstants.h */,
+				8CE7BACD1D8E93C200DDED24 /* BRGlobalConstants.m */,
 			);
 			path = "全局常量";
+			sourceTree = "<group>";
+		};
+		8CFE44C81D8E776A001A4ECB /* Advertisement(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				8C0AA7771D8FB1B2002CB37C /* header */,
+				8CFE44C91D8E776A001A4ECB /* Controller */,
+				8CFE44CD1D8E776A001A4ECB /* Model */,
+				8CFE44CE1D8E776A001A4ECB /* View */,
+			);
+			path = "Advertisement(广告)";
+			sourceTree = "<group>";
+		};
+		8CFE44C91D8E776A001A4ECB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8CE7BAA21D8E77DE00DDED24 /* BRAdViewController.h */,
+				8CE7BAA31D8E77DE00DDED24 /* BRAdViewController.m */,
+				8CE7BAA41D8E77DE00DDED24 /* BRAdViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8CFE44CD1D8E776A001A4ECB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C0AA7741D8FB192002CB37C /* BRAdDataModel.h */,
+				8C0AA7751D8FB192002CB37C /* BRAdDataModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CFE44CE1D8E776A001A4ECB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FF2E39524A0F7FA03A49A7B8 /* Frameworks */ = {
@@ -500,7 +597,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C3619311D865A2F005036B2 /* LaunchScreen.storyboard in Resources */,
+				8CE7BAC21D8E939D00DDED24 /* LaunchImage-700-568h@2x.png in Resources */,
+				8CE7BAC61D8E939D00DDED24 /* LaunchImage.png in Resources */,
 				8C36192E1D865A2F005036B2 /* Assets.xcassets in Resources */,
+				8CE7BAC31D8E939D00DDED24 /* LaunchImage-700@2x.png in Resources */,
+				8CE7BAC51D8E939D00DDED24 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				8CE7BAC11D8E939D00DDED24 /* LaunchImage-568h@2x.png in Resources */,
+				8CE7BAC41D8E939D00DDED24 /* LaunchImage-800-667h@2x.png in Resources */,
+				8CE7BAA61D8E77DE00DDED24 /* BRAdViewController.xib in Resources */,
+				8CE7BAC71D8E939D00DDED24 /* LaunchImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,18 +664,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CE7BACE1D8E93C200DDED24 /* BRGlobalConstants.m in Sources */,
 				8C05AD1F1D892C7700D1E113 /* BRSettingViewController.m in Sources */,
 				8C3649F01D869542006973E5 /* BRMeViewController.m in Sources */,
 				8C3649F31D869555006973E5 /* BRNewViewController.m in Sources */,
 				8C364A0B1D881D19006973E5 /* UIView+Extension.m in Sources */,
 				8C3649ED1D869530006973E5 /* BRFriendTrendViewController.m in Sources */,
 				8C364A011D87E505006973E5 /* BRMainViewController.m in Sources */,
+				8CE7BAD41D8F76F200DDED24 /* BRNetTools.m in Sources */,
+				8C0AA7761D8FB192002CB37C /* BRAdDataModel.m in Sources */,
 				8C3649E41D869253006973E5 /* main.m in Sources */,
+				8CE7BAA51D8E77DE00DDED24 /* BRAdViewController.m in Sources */,
 				8C3649EA1D86950E006973E5 /* BREssenceViewController.m in Sources */,
 				8C364A131D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m in Sources */,
 				8C3649E31D869253006973E5 /* AppDelegate.m in Sources */,
 				8C05AD181D8927A300D1E113 /* BRNavigationController.m in Sources */,
-				8C364A101D881E57006973E5 /* BRGlobalConstants.m in Sources */,
 				8C3649F61D869575006973E5 /* BRPublishViewController.m in Sources */,
 				8C3649E71D869435006973E5 /* BRBaseViewController.m in Sources */,
 				8C364A041D87EC33006973E5 /* BRTabBar.m in Sources */,

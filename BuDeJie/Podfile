@@ -8,4 +8,6 @@ target 'BuDeJie' do
   pod 'Masonry'
   pod 'MJRefresh'
   pod 'IQKeyboardManager'
+  pod 'YYModel'
+
 end
