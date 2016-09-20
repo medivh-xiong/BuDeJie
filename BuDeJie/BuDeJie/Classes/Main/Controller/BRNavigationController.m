@@ -41,18 +41,18 @@
     [super viewDidLoad];
     
     // ----设定滑动返回的手势代理
-    self.interactivePopGestureRecognizer.delegate = self;
+//    self.interactivePopGestureRecognizer.delegate = self;
     
     // ----添加全屏滑动
-//#pragma clang diagnostic push
-//#pragma clang diagnostic ignored "-Wundeclared-selector"
-//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
-//#pragma clang diagnostic pop
-// 
-//
-//    [self.view addGestureRecognizer:pan];
-//
-//    pan.delegate                = self;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+#pragma clang diagnostic pop
+ 
+
+    [self.view addGestureRecognizer:pan];
+
+    pan.delegate                = self;
 }
 
 
@@ -69,6 +69,9 @@
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     if (self.childViewControllers.count > 0) {
+        
+        // ----去掉下方的tabBar
+        viewController.hidesBottomBarWhenPushed = YES;
         
         UIButton *backBtn = ({
         

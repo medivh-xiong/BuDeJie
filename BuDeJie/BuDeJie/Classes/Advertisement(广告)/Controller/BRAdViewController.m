@@ -133,10 +133,11 @@
 /** 设置广告图片*/
 - (void)setAdvertisement:(BRAdDataModel *)model
 {
-    // ----设置广告图片的内容和尺寸
-    CGFloat height = BRSCREEN_WIDTH / model.w * model.h;
+//    CGFloat height = BRSCREEN_WIDTH / model.w * model.h;
     
-    self.adImageView.frame = CGRectMake(0, 0, BRSCREEN_WIDTH, height);
+    self.adImageView.frame       = CGRectMake(0, 0, BRSCREEN_WIDTH, BRSCREEN_HEIGHT);
+
+    self.adImageView.contentMode = UIViewContentModeScaleToFill;
     
     [self.adImageView sd_setImageWithURL:[NSURL URLWithString:self.dataModel.w_picurl]];
     
@@ -182,7 +183,11 @@
 {
     BRMainViewController *mainVC = [[BRMainViewController alloc] init];
     
+    // ----这里要把定时器销毁
     [_timer invalidate];
+    
+    /** 这里置为空,是因为在timeChange方法里使用self调用了点击方法，导致没有释放掉*/
+    _timer = nil;
     
     BRAPPLICATION.keyWindow.rootViewController = mainVC;
 }

@@ -9,14 +9,15 @@
 #import <AFNetworking/AFNetworking.h>
 #import <Foundation/Foundation.h>
 
-@interface BRNetTools : AFHTTPSessionManager
-
 
 /** 请求方法的枚举*/
 typedef NS_ENUM(NSUInteger, BRRequsetType) {
     RequsetGET = 0,
     RequestPOST,
 };
+
+@interface BRNetTools : AFHTTPSessionManager
+
 
 
 /** 返回网络工具类的实例*/
@@ -64,7 +65,6 @@ typedef NS_ENUM(NSUInteger, BRRequsetType) {
                              progress:(void (^)(NSProgress *))downloadProgress
                               success:(void (^)(id responseObject))success
                                failue:(void (^) (NSError *error))failue;
-
 
 
 

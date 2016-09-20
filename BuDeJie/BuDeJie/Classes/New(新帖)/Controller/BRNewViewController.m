@@ -8,6 +8,7 @@
 
 #import "BRNewViewController.h"
 #import "UIBarButtonItem+BRBarButtonItem.h"
+#import "BRSubTagViewController.h"
 
 @implementation BRNewViewController
 
@@ -25,7 +26,7 @@
 - (void)setNavBarItem
 {
     /** 设置左item*/
-    UIBarButtonItem *leftButtonItem        = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(touchu)];
+    UIBarButtonItem *leftButtonItem        = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(tagTap)];
     
     self.navigationItem.leftBarButtonItem  = leftButtonItem;
     
@@ -37,8 +38,12 @@
 }
 
 
-- (void)touchu {
-	
+#pragma mark - 跳转到标签界面
+- (void)tagTap
+{
+    BRSubTagViewController *subTagVC = [[BRSubTagViewController alloc] init];
+    
+    [self.navigationController pushViewController:subTagVC animated:YES];
 }
 
 

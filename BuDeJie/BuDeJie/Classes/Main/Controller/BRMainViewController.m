@@ -44,6 +44,7 @@
     /** 0.设置自定义tabBar*/
     [self setCustomTabBar];
     
+    
     /** 1.添加tabBar子控制器*/
     [self setSubViewControllers];
     
