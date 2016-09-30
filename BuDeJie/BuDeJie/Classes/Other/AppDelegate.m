@@ -29,7 +29,7 @@
 - (void)setRootViewController
 {
     self.window                    = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-
+    
     BRAdViewController *adVC       = [[BRAdViewController alloc] init];
 
     self.window.rootViewController = adVC;

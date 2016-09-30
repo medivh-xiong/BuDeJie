@@ -9,5 +9,5 @@ target 'BuDeJie' do
   pod 'MJRefresh'
   pod 'IQKeyboardManager'
   pod 'YYModel'
-
+  pod 'SVProgressHUD'
 end

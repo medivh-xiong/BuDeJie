@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "BRBaseViewController.h"
 
-@interface BRSettingViewController : BRBaseViewController
+@interface BRSettingViewController : UITableViewController
 
 @end

@@ -7,13 +7,8 @@
 //
 
 #import "BRMainViewController.h"
-#import "BREssenceViewController.h"
-#import "BRFriendTrendViewController.h"
-#import "BRNewViewController.h"
-#import "BRPublishViewController.h"
-#import "BRMeViewController.h"
-#import "BRTabBar.h"
-#import "BRNavigationController.h"
+#import "BRMainheader.h"
+
 
 @implementation BRMainViewController
 
@@ -70,7 +65,7 @@
 {
     // ----1.精华模块
     BREssenceViewController *essenceVC         = [[BREssenceViewController alloc] init];
-    UINavigationController *navEssence         = [[UINavigationController alloc] initWithRootViewController:essenceVC];
+    BRNavigationController *navEssence         = [[BRNavigationController alloc] initWithRootViewController:essenceVC];
     
 
     // ----2.新帖模块
@@ -84,12 +79,16 @@
 
 
     // ----4.我的模块
-    BRMeViewController *meVC                   = [[BRMeViewController alloc] init];
-    BRNavigationController *navMe              = [[BRNavigationController alloc] initWithRootViewController:meVC];
+    UIStoryboard *stoyboard       = [UIStoryboard storyboardWithName:NSStringFromClass([BRMeViewController class]) bundle:nil];
+
+    BRMeViewController *meVC      = [stoyboard instantiateInitialViewController];
+
+    BRNavigationController *navMe = [[BRNavigationController alloc] initWithRootViewController:meVC];
+
+
+    self.viewControllers          = @[navEssence, navNew, navFriendTrend, navMe];
     
-    
-    self.viewControllers                       = @[navEssence, navNew, navFriendTrend, navMe];
-    
+
 }
 
 
@@ -130,7 +129,6 @@
   
     
 }
-
 
 
 @end

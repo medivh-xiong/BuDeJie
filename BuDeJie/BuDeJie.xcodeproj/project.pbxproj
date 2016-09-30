@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5258B45F8963D61B80F7E1E3 /* libPods-BuDeJie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1273E95DCAC1EC991F9D6A9A /* libPods-BuDeJie.a */; };
+		8C02B8271D9219EC00B7F55C /* BRLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C02B8251D9219EC00B7F55C /* BRLoginRegisterViewController.m */; };
+		8C02B8281D9219EC00B7F55C /* BRLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C02B8261D9219EC00B7F55C /* BRLoginRegisterViewController.xib */; };
 		8C05AD181D8927A300D1E113 /* BRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C05AD171D8927A300D1E113 /* BRNavigationController.m */; };
-		8C05AD1F1D892C7700D1E113 /* BRSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C05AD1E1D892C7700D1E113 /* BRSettingViewController.m */; };
+		8C05F2441D915A7B0045E4CF /* BRFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C05F2431D915A7B0045E4CF /* BRFriendTrendViewController.xib */; };
+		8C05F2481D9163FE0045E4CF /* 235113-151224091S119.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C05F2471D9163FE0045E4CF /* 235113-151224091S119.jpg */; };
+		8C06854A1D98CD6800AA7157 /* BRShareBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0685491D98CD6800AA7157 /* BRShareBtn.m */; };
 		8C0AA7761D8FB192002CB37C /* BRAdDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0AA7751D8FB192002CB37C /* BRAdDataModel.m */; };
+		8C3140961D9B5B79001C9C56 /* BRMeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3140941D9B5B79001C9C56 /* BRMeCollectionViewCell.m */; };
+		8C3140971D9B5B79001C9C56 /* BRMeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3140951D9B5B79001C9C56 /* BRMeCollectionViewCell.xib */; };
 		8C36192E1D865A2F005036B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C36192D1D865A2F005036B2 /* Assets.xcassets */; };
 		8C3619311D865A2F005036B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C36192F1D865A2F005036B2 /* LaunchScreen.storyboard */; };
 		8C3649E31D869253006973E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3649DD1D869253006973E5 /* AppDelegate.m */; };
@@ -25,8 +31,22 @@
 		8C364A041D87EC33006973E5 /* BRTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C364A031D87EC32006973E5 /* BRTabBar.m */; };
 		8C364A0B1D881D19006973E5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C364A0A1D881D19006973E5 /* UIView+Extension.m */; };
 		8C364A131D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C364A121D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m */; };
+		8C3B85E61D9CFCDB00F69DAE /* BRSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B85E31D9CFCDB00F69DAE /* BRSettingViewController.m */; };
+		8C3B85E81D9CFCFE00F69DAE /* BRSettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3B85E71D9CFCFE00F69DAE /* BRSettingViewController.storyboard */; };
+		8C6B1E831D9BC13E00B1DD06 /* BRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B1E811D9BC13E00B1DD06 /* BRWebViewController.m */; };
+		8C6B1E841D9BC13E00B1DD06 /* BRWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C6B1E821D9BC13E00B1DD06 /* BRWebViewController.xib */; };
+		8C6B1E861D9BC4A300B1DD06 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6B1E851D9BC4A300B1DD06 /* WebKit.framework */; };
+		8C7B70BC1D9924A5008C3A50 /* BRLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B70BB1D9924A5008C3A50 /* BRLoginTextField.m */; };
+		8C7B70C21D992508008C3A50 /* UITextField+BRTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B70C11D992508008C3A50 /* UITextField+BRTextField.m */; };
+		8C8AFD1E1D93C375002086BE /* BRLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8AFD1D1D93C375002086BE /* BRLoginRegisterView.m */; };
+		8C8AFD201D93C38F002086BE /* BRLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8AFD1F1D93C38F002086BE /* BRLoginRegisterView.xib */; };
+		8C8AFD231D9400AE002086BE /* BRShareBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8AFD221D9400AE002086BE /* BRShareBtnView.m */; };
+		8C8AFD251D9400BB002086BE /* BRShareBtnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8AFD241D9400BB002086BE /* BRShareBtnView.xib */; };
+		8CCB7D301D9B51D100A2081C /* BRMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */; };
+		8CD25E341D9B8F0D00AB1CD4 /* BRMeSquareListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */; };
 		8CDF3BF31D91044C00A6D3EF /* BRSubTagViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF3BF11D91044C00A6D3EF /* BRSubTagViewCell.m */; };
 		8CDF3BF41D91044C00A6D3EF /* BRSubTagViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF3BF21D91044C00A6D3EF /* BRSubTagViewCell.xib */; };
+		8CDF3BFA1D91314200A6D3EF /* UIImage+BRCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF3BF91D91314200A6D3EF /* UIImage+BRCategory.m */; };
 		8CE7BAA51D8E77DE00DDED24 /* BRAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7BAA31D8E77DE00DDED24 /* BRAdViewController.m */; };
 		8CE7BAA61D8E77DE00DDED24 /* BRAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7BAA41D8E77DE00DDED24 /* BRAdViewController.xib */; };
 		8CE7BAC11D8E939D00DDED24 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7BABA1D8E939D00DDED24 /* LaunchImage-568h@2x.png */; };
@@ -46,13 +66,21 @@
 		038A195AE6B87508E3E09C67 /* Pods-BuDeJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.debug.xcconfig"; sourceTree = "<group>"; };
 		1273E95DCAC1EC991F9D6A9A /* libPods-BuDeJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuDeJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FBB465AC3057868E684703 /* Pods-BuDeJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.release.xcconfig"; sourceTree = "<group>"; };
+		8C02B8241D9219EC00B7F55C /* BRLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLoginRegisterViewController.h; sourceTree = "<group>"; };
+		8C02B8251D9219EC00B7F55C /* BRLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLoginRegisterViewController.m; sourceTree = "<group>"; };
+		8C02B8261D9219EC00B7F55C /* BRLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		8C05AD161D8927A300D1E113 /* BRNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRNavigationController.h; sourceTree = "<group>"; };
 		8C05AD171D8927A300D1E113 /* BRNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRNavigationController.m; sourceTree = "<group>"; };
-		8C05AD1D1D892C7700D1E113 /* BRSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSettingViewController.h; sourceTree = "<group>"; };
-		8C05AD1E1D892C7700D1E113 /* BRSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSettingViewController.m; sourceTree = "<group>"; };
+		8C05F2431D915A7B0045E4CF /* BRFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRFriendTrendViewController.xib; sourceTree = "<group>"; };
+		8C05F2471D9163FE0045E4CF /* 235113-151224091S119.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "235113-151224091S119.jpg"; sourceTree = "<group>"; };
+		8C0685481D98CD6800AA7157 /* BRShareBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRShareBtn.h; sourceTree = "<group>"; };
+		8C0685491D98CD6800AA7157 /* BRShareBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRShareBtn.m; sourceTree = "<group>"; };
 		8C0AA7741D8FB192002CB37C /* BRAdDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAdDataModel.h; sourceTree = "<group>"; };
 		8C0AA7751D8FB192002CB37C /* BRAdDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAdDataModel.m; sourceTree = "<group>"; };
 		8C0AA7781D8FB1D0002CB37C /* Advertisement_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Advertisement_Header.h; sourceTree = "<group>"; };
+		8C3140931D9B5B79001C9C56 /* BRMeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMeCollectionViewCell.h; sourceTree = "<group>"; };
+		8C3140941D9B5B79001C9C56 /* BRMeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMeCollectionViewCell.m; sourceTree = "<group>"; };
+		8C3140951D9B5B79001C9C56 /* BRMeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRMeCollectionViewCell.xib; sourceTree = "<group>"; };
 		8C36191E1D865A2F005036B2 /* BuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C36192D1D865A2F005036B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C3619301D865A2F005036B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,9 +108,33 @@
 		8C364A0A1D881D19006973E5 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		8C364A111D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BRBarButtonItem.h"; sourceTree = "<group>"; };
 		8C364A121D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BRBarButtonItem.m"; sourceTree = "<group>"; };
+		8C3B85E21D9CFCDB00F69DAE /* BRSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSettingViewController.h; sourceTree = "<group>"; };
+		8C3B85E31D9CFCDB00F69DAE /* BRSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSettingViewController.m; sourceTree = "<group>"; };
+		8C3B85E71D9CFCFE00F69DAE /* BRSettingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BRSettingViewController.storyboard; sourceTree = "<group>"; };
+		8C6B1E7F1D9BB8C900B1DD06 /* BRMeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRMeHeader.h; sourceTree = "<group>"; };
+		8C6B1E801D9BC13E00B1DD06 /* BRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRWebViewController.h; sourceTree = "<group>"; };
+		8C6B1E811D9BC13E00B1DD06 /* BRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRWebViewController.m; sourceTree = "<group>"; };
+		8C6B1E821D9BC13E00B1DD06 /* BRWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRWebViewController.xib; sourceTree = "<group>"; };
+		8C6B1E851D9BC4A300B1DD06 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8C7B70BA1D9924A5008C3A50 /* BRLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLoginTextField.h; sourceTree = "<group>"; };
+		8C7B70BB1D9924A5008C3A50 /* BRLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLoginTextField.m; sourceTree = "<group>"; };
+		8C7B70C01D992508008C3A50 /* UITextField+BRTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BRTextField.h"; sourceTree = "<group>"; };
+		8C7B70C11D992508008C3A50 /* UITextField+BRTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BRTextField.m"; sourceTree = "<group>"; };
+		8C8949DE1D98FA3E0039145D /* BRMainheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMainheader.h; sourceTree = "<group>"; };
+		8C8AFD1C1D93C375002086BE /* BRLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLoginRegisterView.h; sourceTree = "<group>"; };
+		8C8AFD1D1D93C375002086BE /* BRLoginRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLoginRegisterView.m; sourceTree = "<group>"; };
+		8C8AFD1F1D93C38F002086BE /* BRLoginRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRLoginRegisterView.xib; sourceTree = "<group>"; };
+		8C8AFD211D9400AE002086BE /* BRShareBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRShareBtnView.h; sourceTree = "<group>"; };
+		8C8AFD221D9400AE002086BE /* BRShareBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRShareBtnView.m; sourceTree = "<group>"; };
+		8C8AFD241D9400BB002086BE /* BRShareBtnView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRShareBtnView.xib; sourceTree = "<group>"; };
+		8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BRMeViewController.storyboard; sourceTree = "<group>"; };
+		8CD25E321D9B8F0D00AB1CD4 /* BRMeSquareListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMeSquareListModel.h; sourceTree = "<group>"; };
+		8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMeSquareListModel.m; sourceTree = "<group>"; };
 		8CDF3BF01D91044C00A6D3EF /* BRSubTagViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSubTagViewCell.h; sourceTree = "<group>"; };
 		8CDF3BF11D91044C00A6D3EF /* BRSubTagViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSubTagViewCell.m; sourceTree = "<group>"; };
 		8CDF3BF21D91044C00A6D3EF /* BRSubTagViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRSubTagViewCell.xib; sourceTree = "<group>"; };
+		8CDF3BF81D91314200A6D3EF /* UIImage+BRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BRCategory.h"; sourceTree = "<group>"; };
+		8CDF3BF91D91314200A6D3EF /* UIImage+BRCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BRCategory.m"; sourceTree = "<group>"; };
 		8CE7BAA21D8E77DE00DDED24 /* BRAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAdViewController.h; sourceTree = "<group>"; };
 		8CE7BAA31D8E77DE00DDED24 /* BRAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAdViewController.m; sourceTree = "<group>"; };
 		8CE7BAA41D8E77DE00DDED24 /* BRAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRAdViewController.xib; sourceTree = "<group>"; };
@@ -110,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6B1E861D9BC4A300B1DD06 /* WebKit.framework in Frameworks */,
 				5258B45F8963D61B80F7E1E3 /* libPods-BuDeJie.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,39 +177,6 @@
 				34FBB465AC3057868E684703 /* Pods-BuDeJie.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		8C05AD191D892C4400D1E113 /* 设置 */ = {
-			isa = PBXGroup;
-			children = (
-				8C05AD1A1D892C4400D1E113 /* Controller */,
-				8C05AD1B1D892C4400D1E113 /* Model */,
-				8C05AD1C1D892C4400D1E113 /* View */,
-			);
-			path = "设置";
-			sourceTree = "<group>";
-		};
-		8C05AD1A1D892C4400D1E113 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8C05AD1D1D892C7700D1E113 /* BRSettingViewController.h */,
-				8C05AD1E1D892C7700D1E113 /* BRSettingViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8C05AD1B1D892C4400D1E113 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		8C05AD1C1D892C4400D1E113 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		8C0AA7771D8FB1B2002CB37C /* header */ = {
@@ -217,7 +237,6 @@
 				8C3649DF1D869253006973E5 /* Publish(发布) */,
 				8C3649CF1D869253006973E5 /* FriendTrend(关注) */,
 				8C3649D31D869253006973E5 /* Me(我) */,
-				8C05AD191D892C4400D1E113 /* 设置 */,
 				8C3649DB1D869253006973E5 /* Other */,
 			);
 			path = Classes;
@@ -272,6 +291,11 @@
 			children = (
 				8C3649EB1D869530006973E5 /* BRFriendTrendViewController.h */,
 				8C3649EC1D869530006973E5 /* BRFriendTrendViewController.m */,
+				8C05F2431D915A7B0045E4CF /* BRFriendTrendViewController.xib */,
+				8C05F2471D9163FE0045E4CF /* 235113-151224091S119.jpg */,
+				8C02B8241D9219EC00B7F55C /* BRLoginRegisterViewController.h */,
+				8C02B8251D9219EC00B7F55C /* BRLoginRegisterViewController.m */,
+				8C02B8261D9219EC00B7F55C /* BRLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,6 +310,16 @@
 		8C3649D21D869253006973E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8C8AFD1C1D93C375002086BE /* BRLoginRegisterView.h */,
+				8C8AFD1D1D93C375002086BE /* BRLoginRegisterView.m */,
+				8C8AFD1F1D93C38F002086BE /* BRLoginRegisterView.xib */,
+				8C8AFD211D9400AE002086BE /* BRShareBtnView.h */,
+				8C8AFD221D9400AE002086BE /* BRShareBtnView.m */,
+				8C8AFD241D9400BB002086BE /* BRShareBtnView.xib */,
+				8C0685481D98CD6800AA7157 /* BRShareBtn.h */,
+				8C0685491D98CD6800AA7157 /* BRShareBtn.m */,
+				8C7B70BA1D9924A5008C3A50 /* BRLoginTextField.h */,
+				8C7B70BB1D9924A5008C3A50 /* BRLoginTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,9 +327,11 @@
 		8C3649D31D869253006973E5 /* Me(我) */ = {
 			isa = PBXGroup;
 			children = (
+				8CD25E351D9BB6B100AB1CD4 /* Header */,
 				8C3649D41D869253006973E5 /* Controller */,
 				8C3649D51D869253006973E5 /* Model */,
 				8C3649D61D869253006973E5 /* View */,
+				8C3B85E01D9CFCDB00F69DAE /* 设置 */,
 			);
 			path = "Me(我)";
 			sourceTree = "<group>";
@@ -305,6 +341,10 @@
 			children = (
 				8C3649EE1D869542006973E5 /* BRMeViewController.h */,
 				8C3649EF1D869542006973E5 /* BRMeViewController.m */,
+				8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */,
+				8C6B1E801D9BC13E00B1DD06 /* BRWebViewController.h */,
+				8C6B1E811D9BC13E00B1DD06 /* BRWebViewController.m */,
+				8C6B1E821D9BC13E00B1DD06 /* BRWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +352,8 @@
 		8C3649D51D869253006973E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8CD25E321D9B8F0D00AB1CD4 /* BRMeSquareListModel.h */,
+				8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,6 +361,9 @@
 		8C3649D61D869253006973E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8C3140931D9B5B79001C9C56 /* BRMeCollectionViewCell.h */,
+				8C3140941D9B5B79001C9C56 /* BRMeCollectionViewCell.m */,
+				8C3140951D9B5B79001C9C56 /* BRMeCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -412,6 +457,7 @@
 		8C3649FB1D87E505006973E5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				8C8949DD1D98FA2C0039145D /* Header */,
 				8C3649FC1D87E505006973E5 /* Controller */,
 				8C3649FF1D87E505006973E5 /* Model */,
 				8C364A001D87E505006973E5 /* View */,
@@ -453,6 +499,10 @@
 				8C364A0A1D881D19006973E5 /* UIView+Extension.m */,
 				8C364A111D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.h */,
 				8C364A121D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m */,
+				8CDF3BF81D91314200A6D3EF /* UIImage+BRCategory.h */,
+				8CDF3BF91D91314200A6D3EF /* UIImage+BRCategory.m */,
+				8C7B70C01D992508008C3A50 /* UITextField+BRTextField.h */,
+				8C7B70C11D992508008C3A50 /* UITextField+BRTextField.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -464,6 +514,56 @@
 				8CE7BAD31D8F76F200DDED24 /* BRNetTools.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		8C3B85E01D9CFCDB00F69DAE /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				8C3B85E11D9CFCDB00F69DAE /* Controller */,
+				8C3B85E41D9CFCDB00F69DAE /* Model */,
+				8C3B85E51D9CFCDB00F69DAE /* View */,
+			);
+			path = "设置";
+			sourceTree = "<group>";
+		};
+		8C3B85E11D9CFCDB00F69DAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C3B85E21D9CFCDB00F69DAE /* BRSettingViewController.h */,
+				8C3B85E31D9CFCDB00F69DAE /* BRSettingViewController.m */,
+				8C3B85E71D9CFCFE00F69DAE /* BRSettingViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8C3B85E41D9CFCDB00F69DAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C3B85E51D9CFCDB00F69DAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C8949DD1D98FA2C0039145D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8C8949DE1D98FA3E0039145D /* BRMainheader.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		8CD25E351D9BB6B100AB1CD4 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B1E7F1D9BB8C900B1DD06 /* BRMeHeader.h */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		8CE7BAB81D8E939D00DDED24 /* Resoureces */ = {
@@ -547,6 +647,7 @@
 		FF2E39524A0F7FA03A49A7B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C6B1E851D9BC4A300B1DD06 /* WebKit.framework */,
 				1273E95DCAC1EC991F9D6A9A /* libPods-BuDeJie.a */,
 			);
 			name = Frameworks;
@@ -616,13 +717,22 @@
 			files = (
 				8CDF3BF41D91044C00A6D3EF /* BRSubTagViewCell.xib in Resources */,
 				8C3619311D865A2F005036B2 /* LaunchScreen.storyboard in Resources */,
+				8C05F2481D9163FE0045E4CF /* 235113-151224091S119.jpg in Resources */,
+				8CCB7D301D9B51D100A2081C /* BRMeViewController.storyboard in Resources */,
+				8C8AFD201D93C38F002086BE /* BRLoginRegisterView.xib in Resources */,
 				8CE7BAC21D8E939D00DDED24 /* LaunchImage-700-568h@2x.png in Resources */,
 				8CE7BAC61D8E939D00DDED24 /* LaunchImage.png in Resources */,
+				8C02B8281D9219EC00B7F55C /* BRLoginRegisterViewController.xib in Resources */,
 				8C36192E1D865A2F005036B2 /* Assets.xcassets in Resources */,
 				8CE7BAC31D8E939D00DDED24 /* LaunchImage-700@2x.png in Resources */,
+				8C8AFD251D9400BB002086BE /* BRShareBtnView.xib in Resources */,
 				8CE7BAC51D8E939D00DDED24 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				8C3140971D9B5B79001C9C56 /* BRMeCollectionViewCell.xib in Resources */,
 				8CE7BAC11D8E939D00DDED24 /* LaunchImage-568h@2x.png in Resources */,
+				8C3B85E81D9CFCFE00F69DAE /* BRSettingViewController.storyboard in Resources */,
+				8C05F2441D915A7B0045E4CF /* BRFriendTrendViewController.xib in Resources */,
 				8CE7BAC41D8E939D00DDED24 /* LaunchImage-800-667h@2x.png in Resources */,
+				8C6B1E841D9BC13E00B1DD06 /* BRWebViewController.xib in Resources */,
 				8CE7BAA61D8E77DE00DDED24 /* BRAdViewController.xib in Resources */,
 				8CE7BAC71D8E939D00DDED24 /* LaunchImage@2x.png in Resources */,
 			);
@@ -684,26 +794,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CE7BACE1D8E93C200DDED24 /* BRGlobalConstants.m in Sources */,
-				8C05AD1F1D892C7700D1E113 /* BRSettingViewController.m in Sources */,
 				8C3649F01D869542006973E5 /* BRMeViewController.m in Sources */,
 				8C3649F31D869555006973E5 /* BRNewViewController.m in Sources */,
 				8C364A0B1D881D19006973E5 /* UIView+Extension.m in Sources */,
 				8C3649ED1D869530006973E5 /* BRFriendTrendViewController.m in Sources */,
 				8C364A011D87E505006973E5 /* BRMainViewController.m in Sources */,
+				8C8AFD231D9400AE002086BE /* BRShareBtnView.m in Sources */,
 				8CE7BAD41D8F76F200DDED24 /* BRNetTools.m in Sources */,
 				8C0AA7761D8FB192002CB37C /* BRAdDataModel.m in Sources */,
 				8CEB67E01D90C9C900DEC374 /* BRSubTagModel.m in Sources */,
 				8C3649E41D869253006973E5 /* main.m in Sources */,
 				8CEB67DD1D8FE5C600DEC374 /* BRSubTagViewController.m in Sources */,
 				8CE7BAA51D8E77DE00DDED24 /* BRAdViewController.m in Sources */,
+				8C8AFD1E1D93C375002086BE /* BRLoginRegisterView.m in Sources */,
 				8CDF3BF31D91044C00A6D3EF /* BRSubTagViewCell.m in Sources */,
 				8C3649EA1D86950E006973E5 /* BREssenceViewController.m in Sources */,
+				8C02B8271D9219EC00B7F55C /* BRLoginRegisterViewController.m in Sources */,
 				8C364A131D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m in Sources */,
 				8C3649E31D869253006973E5 /* AppDelegate.m in Sources */,
+				8C3B85E61D9CFCDB00F69DAE /* BRSettingViewController.m in Sources */,
 				8C05AD181D8927A300D1E113 /* BRNavigationController.m in Sources */,
+				8C7B70BC1D9924A5008C3A50 /* BRLoginTextField.m in Sources */,
+				8C3140961D9B5B79001C9C56 /* BRMeCollectionViewCell.m in Sources */,
 				8C3649F61D869575006973E5 /* BRPublishViewController.m in Sources */,
 				8C3649E71D869435006973E5 /* BRBaseViewController.m in Sources */,
 				8C364A041D87EC33006973E5 /* BRTabBar.m in Sources */,
+				8C6B1E831D9BC13E00B1DD06 /* BRWebViewController.m in Sources */,
+				8C06854A1D98CD6800AA7157 /* BRShareBtn.m in Sources */,
+				8CDF3BFA1D91314200A6D3EF /* UIImage+BRCategory.m in Sources */,
+				8CD25E341D9B8F0D00AB1CD4 /* BRMeSquareListModel.m in Sources */,
+				8C7B70C21D992508008C3A50 /* UITextField+BRTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

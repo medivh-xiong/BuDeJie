@@ -11,6 +11,7 @@
 #import "BRSubTagModel.h"
 #import "YYModel.h"
 #import "BRSubTagViewCell.h"
+#import "SVProgressHUD.h"
 
 
 
@@ -53,13 +54,45 @@ static NSString * const cellID = @"BRSubTagCell";
 }
 
 
+#pragma mark - 视图将要消失
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [SVProgressHUD dismiss];
+
+     BRNetTools *sharedTools         = [BRNetTools sharedNetTools];
+    
+    [sharedTools.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
+}
+
+
 #pragma mark - 对界面初始化设定
 - (void)baseSetting
 {
+    /** 设定标题*/
     self.title = @"推荐标签";
     
     /** 注册自定义Cell*/
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([BRSubTagViewCell class]) bundle:nil] forCellReuseIdentifier:cellID];
+    
+    /** 去掉表格横线的margin*/
+    
+    // ----方法1
+//    if ([self.tableView respondsToSelector:@selector(setSeparatorInset:)]) {
+//        
+//        [self.tableView setSeparatorInset:UIEdgeInsetsZero];
+//    }
+    
+    // ----方法2
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    self.tableView.backgroundColor = [UIColor colorWithRed:220 / 255.0 green:220 / 255.0 blue:221 / 255.0 alpha:1.0];
+    
+    // ----显示hud
+    [SVProgressHUD showWithStatus:@"正在加载ing....."];
+    
 }
 
 
@@ -87,7 +120,7 @@ static NSString * const cellID = @"BRSubTagCell";
         
 //        BRLog(@"%@", responseObject);
         
-        [responseObject writeToFile:@"/Users/xiongxin/Documents/百思不得姐/BuDeJie/BuDeJie/Classes/New(新帖)/info.plist" atomically:YES];
+        [SVProgressHUD dismiss];
         
         self.modelArray = [NSArray yy_modelArrayWithClass:[BRSubTagModel class] json:responseObject];
         
@@ -96,6 +129,9 @@ static NSString * const cellID = @"BRSubTagCell";
         [self.tableView reloadData];
         
     } failue:^(NSError *error) {
+        
+        [SVProgressHUD dismiss];
+        
         BRLog(@"%@", error);
     }];
     
@@ -113,7 +149,7 @@ static NSString * const cellID = @"BRSubTagCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 66;
+    return 60;
 }
 
 
@@ -133,6 +169,9 @@ static NSString * const cellID = @"BRSubTagCell";
     
     return  cell;
 }
+
+
+
 
 
 

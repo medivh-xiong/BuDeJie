@@ -18,34 +18,42 @@
 
 
 /*************屏幕适配*************/
-#define BRSCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
+#define BRSCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 
-#define BRSCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define BRSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
-#define IS_IPHONE6P     (BRSCREEN_HEIGHT == 736)
+#define IS_IPHONE6P     BRSCREEN_HEIGHT == 736
 
-#define IS_IPHONE6      (BRSCREEN_HEIGHT == 667)
+#define IS_IPHONE6      BRSCREEN_HEIGHT == 667
 
-#define IS_IPHONE5      (BRSCREEN_HEIGHT == 568)
+#define IS_IPHONE5      BRSCREEN_HEIGHT == 568
 
-#define IS_IPHONE4      (BRSCREEN_HEIGHT == 480)
+#define IS_IPHONE4      BRSCREEN_HEIGHT == 480
 /*************屏幕适配*************/
 
-#define BRAPPLICATION   ([UIApplication sharedApplication])
+
+/** UIAppliation*/
+#define BRAPPLICATION   [UIApplication sharedApplication]
 
 
 /** 正常背景色*/
-#define DEFAULT_BGCOLOR ([UIColor whiteColor])
+#define DEFAULT_BGCOLOR [UIColor whiteColor]
 
 /** 夜晚模式*/
-#define NIGHT_BGCOLOR   ([UIColor blackColor])
+#define NIGHT_BGCOLOR   [UIColor blackColor]
 
-#define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0];
+
+/** 设置RGB颜色/设置RGBA颜色*/
+#define BR_RGB_Color(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0];
+
+#define BR_RGBA_Color(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a];
+
+
 
 /** 打印*/
 #ifdef DEBUG
 
-#define BRLog(s, ...) NSLog(@"文件名:%@ 所在行:%d \n===================打印内容===================\n%@ ", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#define BRLog(s, ...) NSLog(@"文件名:%@ 所在行:%d \n===================内容===================\n%@ ", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
 
 #else
 

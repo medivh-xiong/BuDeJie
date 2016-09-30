@@ -8,6 +8,6 @@
 
 #import "BRBaseViewController.h"
 
-@interface BRMeViewController : BRBaseViewController
+@interface BRMeViewController : UITableViewController
 
 @end

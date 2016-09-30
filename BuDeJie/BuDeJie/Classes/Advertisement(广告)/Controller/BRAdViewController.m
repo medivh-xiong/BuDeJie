@@ -34,14 +34,6 @@
 @implementation BRAdViewController
 
 
-#pragma mark - 隐藏系统的状态栏
-- (BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
-
-
-
 #pragma mark - 懒加载
 - (UIImageView *)adImageView
 {
@@ -69,10 +61,17 @@
 {
     [super viewDidLoad];
     
+    
+    [UIApplication sharedApplication].statusBarHidden = NO;
+    
     // ----添加启动视图
     [self setLuanchImageView];
     
     
+    // ----开启定时器
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timeChange) userInfo:nil repeats:YES];
+    
+
     // ----加载广告数据
     [self loadAdData];
     
@@ -140,9 +139,6 @@
     self.adImageView.contentMode = UIViewContentModeScaleToFill;
     
     [self.adImageView sd_setImageWithURL:[NSURL URLWithString:self.dataModel.w_picurl]];
-    
-    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timeChange) userInfo:nil repeats:YES];
-    
 }
 
 

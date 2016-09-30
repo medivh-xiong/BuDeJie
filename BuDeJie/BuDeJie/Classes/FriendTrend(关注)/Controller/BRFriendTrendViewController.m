@@ -8,19 +8,21 @@
 
 #import "BRFriendTrendViewController.h"
 #import "UIBarButtonItem+BRBarButtonItem.h"
+#import "BRLoginRegisterViewController.h"
+#import "UITextField+BRTextField.h"
 
 @implementation BRFriendTrendViewController
 
 
-
+#pragma mark - 视图加载
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    
     // ----设置导航栏的样式
     [self setNavBarItem];
 }
-
 
 
 
@@ -39,8 +41,36 @@
     
 }
 
+
 - (void)touchu {
     
 }
+
+
+
+#pragma mark - 登陆按钮点击
+- (IBAction)loginClick:(id)sender
+{
+    BRLoginRegisterViewController *loginVC = [[BRLoginRegisterViewController alloc] init];
+
+    loginVC.login                          = YES;
+    
+    [self presentViewController:loginVC animated:YES completion:nil];
+}
+
+
+
+#pragma mark - 注册按钮点击
+- (IBAction)registerClick:(id)sender
+{
+    
+    BRLoginRegisterViewController *loginVC = [[BRLoginRegisterViewController alloc] init];
+
+    loginVC.login                          = NO;
+    
+    [self presentViewController:loginVC animated:YES completion:nil];
+    
+}
+
 
 @end

@@ -10,7 +10,10 @@
 
 @interface BRNavigationController : UINavigationController
 
+@property (nonatomic, readwrite, strong) UIProgressView *loadProgress;
 
 
+/** 创建一个返回按钮*/
+- (UIButton *)createBackBtn;
 
 @end

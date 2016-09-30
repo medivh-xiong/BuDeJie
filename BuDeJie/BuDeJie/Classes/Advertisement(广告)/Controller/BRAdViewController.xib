@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BRAdViewController">
@@ -18,29 +19,25 @@
             <rect key="frame" x="0.0" y="0.0" width="291" height="559"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rcx-wd-Eua" userLabel="启动图片">
-                    <rect key="frame" x="0.0" y="0.0" width="291" height="559"/>
-                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rcx-wd-Eua" userLabel="启动图片"/>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awi-kG-0lZ" userLabel="广告界面占位">
-                    <rect key="frame" x="0.0" y="0.0" width="291" height="559"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGl-X6-zXL">
-                    <rect key="frame" x="204" y="25" width="75" height="30"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.42489224137931036" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.42489224137931036" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="75" id="Nhd-TX-vC2"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="跳过（5）">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="jumpAD:" destination="-1" eventType="touchUpInside" id="DqJ-Ui-hkF"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="rcx-wd-Eua" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0hU-Ck-6hu"/>
                 <constraint firstAttribute="bottom" secondItem="Awi-kG-0lZ" secondAttribute="bottom" id="1eP-8C-Qn1"/>

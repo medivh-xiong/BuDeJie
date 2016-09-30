@@ -21,7 +21,6 @@
 }
 
 
-
 #pragma mark - 设置导航栏的样式
 - (void)setNavBarItem
 {
