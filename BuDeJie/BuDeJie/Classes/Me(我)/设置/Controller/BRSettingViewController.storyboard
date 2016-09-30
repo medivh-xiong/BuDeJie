@@ -21,7 +21,7 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U0c-Tk-svh" id="RnE-uU-dI5">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="字体大小" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ja-wx-abq">
@@ -185,6 +185,7 @@
                     </tableView>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="cacheLabel" destination="7om-X8-iSC" id="Kxd-MI-7t8"/>
                         <outlet property="myTable" destination="hJR-jR-ZVg" id="dWq-NI-R7q"/>
                     </connections>
                 </tableViewController>

@@ -49,11 +49,19 @@
     
 }
 
-
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+}
 
 #pragma mark - 加载UI
 - (void)setUpUI
 {
+    // ----0.修改状态栏
+  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    
     // ----1.添加登陆界面
     BRLoginRegisterView *loginView    = [BRLoginRegisterView loadLoginView];
 

@@ -49,11 +49,22 @@
 #define BR_RGBA_Color(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a];
 
 
+/*************文件管理*************/
+#define BRCachePath          [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
+#define BRCacheSubPath(Str)  [BRCachePath stringByAppendingPathComponent:Str]
+
+
+
+
+/*************文件管理*************/
+
+
 
 /** 打印*/
 #ifdef DEBUG
 
-#define BRLog(s, ...) NSLog(@"文件名:%@ 所在行:%d \n===================内容===================\n%@ ", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#define BRLog(s, ...) NSLog(@"文件名:%@ 所在行:%d 方法名:%s \n===================内容===================\n%@ ", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, __func__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
 
 #else
 

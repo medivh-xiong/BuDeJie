@@ -9,6 +9,7 @@
 #import "BRMeViewController.h"
 #import "BRMeHeader.h"
 #import "BRWebViewController.h"
+#import "BRLoginRegisterViewController.h"
 
 
 @interface BRMeViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
@@ -147,6 +148,21 @@
 
     self.tableView.tableFooterView = collecitonV;
     
+}
+
+
+
+#pragma mark - tableView的代理方法
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section ==0 && indexPath.row == 0) {
+        
+        BRLoginRegisterViewController *loginVC = [[BRLoginRegisterViewController alloc] init];
+
+        loginVC.login                          = YES;
+
+        [self presentViewController:loginVC animated:YES completion:nil];
+    }
 }
 
 

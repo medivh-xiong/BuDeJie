@@ -44,6 +44,7 @@
 		8C8AFD251D9400BB002086BE /* BRShareBtnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8AFD241D9400BB002086BE /* BRShareBtnView.xib */; };
 		8CCB7D301D9B51D100A2081C /* BRMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */; };
 		8CD25E341D9B8F0D00AB1CD4 /* BRMeSquareListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */; };
+		8CD57D321D9E4A340008AFDB /* BRFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD57D311D9E4A340008AFDB /* BRFileTools.m */; };
 		8CDF3BF31D91044C00A6D3EF /* BRSubTagViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF3BF11D91044C00A6D3EF /* BRSubTagViewCell.m */; };
 		8CDF3BF41D91044C00A6D3EF /* BRSubTagViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF3BF21D91044C00A6D3EF /* BRSubTagViewCell.xib */; };
 		8CDF3BFA1D91314200A6D3EF /* UIImage+BRCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF3BF91D91314200A6D3EF /* UIImage+BRCategory.m */; };
@@ -130,6 +131,8 @@
 		8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BRMeViewController.storyboard; sourceTree = "<group>"; };
 		8CD25E321D9B8F0D00AB1CD4 /* BRMeSquareListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMeSquareListModel.h; sourceTree = "<group>"; };
 		8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMeSquareListModel.m; sourceTree = "<group>"; };
+		8CD57D301D9E4A340008AFDB /* BRFileTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRFileTools.h; sourceTree = "<group>"; };
+		8CD57D311D9E4A340008AFDB /* BRFileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRFileTools.m; sourceTree = "<group>"; };
 		8CDF3BF01D91044C00A6D3EF /* BRSubTagViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSubTagViewCell.h; sourceTree = "<group>"; };
 		8CDF3BF11D91044C00A6D3EF /* BRSubTagViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSubTagViewCell.m; sourceTree = "<group>"; };
 		8CDF3BF21D91044C00A6D3EF /* BRSubTagViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRSubTagViewCell.xib; sourceTree = "<group>"; };
@@ -512,6 +515,8 @@
 			children = (
 				8CE7BAD21D8F76F200DDED24 /* BRNetTools.h */,
 				8CE7BAD31D8F76F200DDED24 /* BRNetTools.m */,
+				8CD57D301D9E4A340008AFDB /* BRFileTools.h */,
+				8CD57D311D9E4A340008AFDB /* BRFileTools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -806,6 +811,7 @@
 				8C3649E41D869253006973E5 /* main.m in Sources */,
 				8CEB67DD1D8FE5C600DEC374 /* BRSubTagViewController.m in Sources */,
 				8CE7BAA51D8E77DE00DDED24 /* BRAdViewController.m in Sources */,
+				8CD57D321D9E4A340008AFDB /* BRFileTools.m in Sources */,
 				8C8AFD1E1D93C375002086BE /* BRLoginRegisterView.m in Sources */,
 				8CDF3BF31D91044C00A6D3EF /* BRSubTagViewCell.m in Sources */,
 				8C3649EA1D86950E006973E5 /* BREssenceViewController.m in Sources */,

@@ -61,9 +61,6 @@
 {
     [super viewDidLoad];
     
-    
-    [UIApplication sharedApplication].statusBarHidden = NO;
-    
     // ----添加启动视图
     [self setLuanchImageView];
     
@@ -178,7 +175,8 @@
 - (IBAction)jumpAD:(id)sender
 {
     BRMainViewController *mainVC = [[BRMainViewController alloc] init];
-    
+   
+    [UIApplication sharedApplication].statusBarHidden = NO;
     // ----这里要把定时器销毁
     [_timer invalidate];
     

@@ -7,11 +7,18 @@
 //
 
 #import "BRSettingViewController.h"
+#import "SDImageCache.h"
+#import "SVProgressHUD.h"
+#import "BRFileTools.h"
 
 
 @interface BRSettingViewController ()
 
 @property (strong, nonatomic) IBOutlet UITableView *myTable;
+
+@property (weak, nonatomic) IBOutlet UILabel *cacheLabel;
+
+@property (nonatomic, readwrite, assign) NSUInteger fileSize;
 
 @end
 
@@ -21,7 +28,7 @@
 
 + (void)load
 {
-    UITableViewCell *cell = [UITableViewCell appearance];
+    UITableViewCell *cell = [UITableViewCell appearanceWhenContainedIn:self, nil];
     
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
     
@@ -29,12 +36,44 @@
 }
 
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    
+    [SVProgressHUD setMinimumDismissTimeInterval:1.2f];
+    
+    [SVProgressHUD setCornerRadius:8];
+    
+    [SVProgressHUD showWithStatus:@"正在计算缓存数据,请稍后"];
+
+    [BRFileTools getCacheSize:BRCachePath compleion:^(NSUInteger size) {
+       
+        [SVProgressHUD dismiss];
+        
+        _fileSize = size;
+        
+        // ----设置缓存label的信息
+        [self setCacheLabelInfo];
+        
+    }];
 }
 
+
+
+- (void)setCacheLabelInfo
+{
+    NSString *cacheStr = [BRFileTools getCacheSizeStr:_fileSize];
+    
+    if ([cacheStr isEqualToString:@""]) {
+        self.cacheLabel.text = @"清除缓存";
+    }else {
+       self.cacheLabel.text  = [NSString stringWithFormat:@"清除缓存:(已使用%@)", cacheStr];
+    }
+    
+}
 
 
 #pragma mark - 代理方法
@@ -93,7 +132,6 @@
             break;
     }
     
-    
     return contentView;
 }
 
@@ -102,8 +140,24 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.section == 1 && indexPath.row == 0) {
+        
+        [SVProgressHUD showWithStatus:@"正在清除缓存，请稍后。。。"];
+       
+        [BRFileTools removeCacheAtDirectory:BRCachePath compleion:^{
+            
+            // ----清空数据
+            _fileSize = 0;
+            
+            [self setCacheLabelInfo];
+            
+           [SVProgressHUD showSuccessWithStatus:@"清除缓存成功"];
+            
+        }];
+        
+    }
 }
-
 
 
 
