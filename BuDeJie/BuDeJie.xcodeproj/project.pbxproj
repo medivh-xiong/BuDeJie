@@ -22,7 +22,6 @@
 		8C3649E31D869253006973E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3649DD1D869253006973E5 /* AppDelegate.m */; };
 		8C3649E41D869253006973E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3649DE1D869253006973E5 /* main.m */; };
 		8C3649E71D869435006973E5 /* BRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3649E61D869435006973E5 /* BRBaseViewController.m */; };
-		8C3649EA1D86950E006973E5 /* BREssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3649E91D86950E006973E5 /* BREssenceViewController.m */; };
 		8C3649ED1D869530006973E5 /* BRFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3649EC1D869530006973E5 /* BRFriendTrendViewController.m */; };
 		8C3649F01D869542006973E5 /* BRMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3649EF1D869542006973E5 /* BRMeViewController.m */; };
 		8C3649F31D869555006973E5 /* BRNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3649F21D869555006973E5 /* BRNewViewController.m */; };
@@ -42,6 +41,12 @@
 		8C8AFD201D93C38F002086BE /* BRLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8AFD1F1D93C38F002086BE /* BRLoginRegisterView.xib */; };
 		8C8AFD231D9400AE002086BE /* BRShareBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8AFD221D9400AE002086BE /* BRShareBtnView.m */; };
 		8C8AFD251D9400BB002086BE /* BRShareBtnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8AFD241D9400BB002086BE /* BRShareBtnView.xib */; };
+		8C945CA91DAB915600B63752 /* BREssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945C991DAB915600B63752 /* BREssenceViewController.m */; };
+		8C945CAA1DAB915600B63752 /* BRAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945C9C1DAB915600B63752 /* BRAllTableViewController.m */; };
+		8C945CAB1DAB915600B63752 /* BRJokeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945C9E1DAB915600B63752 /* BRJokeTableViewController.m */; };
+		8C945CAC1DAB915600B63752 /* BRPhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CA01DAB915600B63752 /* BRPhotoTableViewController.m */; };
+		8C945CAD1DAB915600B63752 /* BRSoundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CA21DAB915600B63752 /* BRSoundTableViewController.m */; };
+		8C945CAE1DAB915600B63752 /* BRVideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CA41DAB915600B63752 /* BRVideoTableViewController.m */; };
 		8CCB7D301D9B51D100A2081C /* BRMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */; };
 		8CD25E341D9B8F0D00AB1CD4 /* BRMeSquareListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */; };
 		8CD57D321D9E4A340008AFDB /* BRFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD57D311D9E4A340008AFDB /* BRFileTools.m */; };
@@ -91,8 +96,6 @@
 		8C3649DE1D869253006973E5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Classes/Other/main.m; sourceTree = "<group>"; };
 		8C3649E51D869435006973E5 /* BRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBaseViewController.h; sourceTree = "<group>"; };
 		8C3649E61D869435006973E5 /* BRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseViewController.m; sourceTree = "<group>"; };
-		8C3649E81D86950E006973E5 /* BREssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREssenceViewController.h; sourceTree = "<group>"; };
-		8C3649E91D86950E006973E5 /* BREssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREssenceViewController.m; sourceTree = "<group>"; };
 		8C3649EB1D869530006973E5 /* BRFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRFriendTrendViewController.h; sourceTree = "<group>"; };
 		8C3649EC1D869530006973E5 /* BRFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRFriendTrendViewController.m; sourceTree = "<group>"; };
 		8C3649EE1D869542006973E5 /* BRMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMeViewController.h; sourceTree = "<group>"; };
@@ -128,6 +131,19 @@
 		8C8AFD211D9400AE002086BE /* BRShareBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRShareBtnView.h; sourceTree = "<group>"; };
 		8C8AFD221D9400AE002086BE /* BRShareBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRShareBtnView.m; sourceTree = "<group>"; };
 		8C8AFD241D9400BB002086BE /* BRShareBtnView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRShareBtnView.xib; sourceTree = "<group>"; };
+		8C945C981DAB915600B63752 /* BREssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREssenceViewController.h; sourceTree = "<group>"; };
+		8C945C991DAB915600B63752 /* BREssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREssenceViewController.m; sourceTree = "<group>"; };
+		8C945C9B1DAB915600B63752 /* BRAllTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAllTableViewController.h; sourceTree = "<group>"; };
+		8C945C9C1DAB915600B63752 /* BRAllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAllTableViewController.m; sourceTree = "<group>"; };
+		8C945C9D1DAB915600B63752 /* BRJokeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRJokeTableViewController.h; sourceTree = "<group>"; };
+		8C945C9E1DAB915600B63752 /* BRJokeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRJokeTableViewController.m; sourceTree = "<group>"; };
+		8C945C9F1DAB915600B63752 /* BRPhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPhotoTableViewController.h; sourceTree = "<group>"; };
+		8C945CA01DAB915600B63752 /* BRPhotoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPhotoTableViewController.m; sourceTree = "<group>"; };
+		8C945CA11DAB915600B63752 /* BRSoundTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSoundTableViewController.h; sourceTree = "<group>"; };
+		8C945CA21DAB915600B63752 /* BRSoundTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSoundTableViewController.m; sourceTree = "<group>"; };
+		8C945CA31DAB915600B63752 /* BRVideoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRVideoTableViewController.h; sourceTree = "<group>"; };
+		8C945CA41DAB915600B63752 /* BRVideoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRVideoTableViewController.m; sourceTree = "<group>"; };
+		8C945CAF1DAB918600B63752 /* BREssence_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREssence_Header.h; sourceTree = "<group>"; };
 		8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BRMeViewController.storyboard; sourceTree = "<group>"; };
 		8CD25E321D9B8F0D00AB1CD4 /* BRMeSquareListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMeSquareListModel.h; sourceTree = "<group>"; };
 		8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMeSquareListModel.m; sourceTree = "<group>"; };
@@ -233,9 +249,9 @@
 		8C3649CA1D869253006973E5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8CFE44C81D8E776A001A4ECB /* Advertisement(广告) */,
 				8C3649FB1D87E505006973E5 /* Main */,
-				8C3649CB1D869253006973E5 /* Essence(精华) */,
+				8CFE44C81D8E776A001A4ECB /* Advertisement(广告) */,
+				8C945C961DAB915600B63752 /* Essence(精华) */,
 				8C3649D71D869253006973E5 /* New(新帖) */,
 				8C3649DF1D869253006973E5 /* Publish(发布) */,
 				8C3649CF1D869253006973E5 /* FriendTrend(关注) */,
@@ -243,40 +259,6 @@
 				8C3649DB1D869253006973E5 /* Other */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		8C3649CB1D869253006973E5 /* Essence(精华) */ = {
-			isa = PBXGroup;
-			children = (
-				8C3649CC1D869253006973E5 /* Controller */,
-				8C3649CD1D869253006973E5 /* Model */,
-				8C3649CE1D869253006973E5 /* View */,
-			);
-			name = "Essence(精华)";
-			path = Essence;
-			sourceTree = "<group>";
-		};
-		8C3649CC1D869253006973E5 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8C3649E81D86950E006973E5 /* BREssenceViewController.h */,
-				8C3649E91D86950E006973E5 /* BREssenceViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8C3649CD1D869253006973E5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		8C3649CE1D869253006973E5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		8C3649CF1D869253006973E5 /* FriendTrend(关注) */ = {
@@ -563,6 +545,66 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		8C945C961DAB915600B63752 /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				8C945C971DAB915600B63752 /* Controller */,
+				8C945CA51DAB915600B63752 /* header */,
+				8C945CA71DAB915600B63752 /* Model */,
+				8C945CA81DAB915600B63752 /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		8C945C971DAB915600B63752 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C945C981DAB915600B63752 /* BREssenceViewController.h */,
+				8C945C991DAB915600B63752 /* BREssenceViewController.m */,
+				8C945C9A1DAB915600B63752 /* ChildController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8C945C9A1DAB915600B63752 /* ChildController */ = {
+			isa = PBXGroup;
+			children = (
+				8C945C9B1DAB915600B63752 /* BRAllTableViewController.h */,
+				8C945C9C1DAB915600B63752 /* BRAllTableViewController.m */,
+				8C945C9D1DAB915600B63752 /* BRJokeTableViewController.h */,
+				8C945C9E1DAB915600B63752 /* BRJokeTableViewController.m */,
+				8C945C9F1DAB915600B63752 /* BRPhotoTableViewController.h */,
+				8C945CA01DAB915600B63752 /* BRPhotoTableViewController.m */,
+				8C945CA11DAB915600B63752 /* BRSoundTableViewController.h */,
+				8C945CA21DAB915600B63752 /* BRSoundTableViewController.m */,
+				8C945CA31DAB915600B63752 /* BRVideoTableViewController.h */,
+				8C945CA41DAB915600B63752 /* BRVideoTableViewController.m */,
+			);
+			path = ChildController;
+			sourceTree = "<group>";
+		};
+		8C945CA51DAB915600B63752 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				8C945CAF1DAB918600B63752 /* BREssence_Header.h */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		8C945CA71DAB915600B63752 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C945CA81DAB915600B63752 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8CD25E351D9BB6B100AB1CD4 /* Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -801,6 +843,7 @@
 				8CE7BACE1D8E93C200DDED24 /* BRGlobalConstants.m in Sources */,
 				8C3649F01D869542006973E5 /* BRMeViewController.m in Sources */,
 				8C3649F31D869555006973E5 /* BRNewViewController.m in Sources */,
+				8C945CAA1DAB915600B63752 /* BRAllTableViewController.m in Sources */,
 				8C364A0B1D881D19006973E5 /* UIView+Extension.m in Sources */,
 				8C3649ED1D869530006973E5 /* BRFriendTrendViewController.m in Sources */,
 				8C364A011D87E505006973E5 /* BRMainViewController.m in Sources */,
@@ -811,20 +854,24 @@
 				8C3649E41D869253006973E5 /* main.m in Sources */,
 				8CEB67DD1D8FE5C600DEC374 /* BRSubTagViewController.m in Sources */,
 				8CE7BAA51D8E77DE00DDED24 /* BRAdViewController.m in Sources */,
+				8C945CA91DAB915600B63752 /* BREssenceViewController.m in Sources */,
+				8C945CAC1DAB915600B63752 /* BRPhotoTableViewController.m in Sources */,
 				8CD57D321D9E4A340008AFDB /* BRFileTools.m in Sources */,
+				8C945CAE1DAB915600B63752 /* BRVideoTableViewController.m in Sources */,
 				8C8AFD1E1D93C375002086BE /* BRLoginRegisterView.m in Sources */,
 				8CDF3BF31D91044C00A6D3EF /* BRSubTagViewCell.m in Sources */,
-				8C3649EA1D86950E006973E5 /* BREssenceViewController.m in Sources */,
 				8C02B8271D9219EC00B7F55C /* BRLoginRegisterViewController.m in Sources */,
 				8C364A131D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m in Sources */,
 				8C3649E31D869253006973E5 /* AppDelegate.m in Sources */,
 				8C3B85E61D9CFCDB00F69DAE /* BRSettingViewController.m in Sources */,
+				8C945CAD1DAB915600B63752 /* BRSoundTableViewController.m in Sources */,
 				8C05AD181D8927A300D1E113 /* BRNavigationController.m in Sources */,
 				8C7B70BC1D9924A5008C3A50 /* BRLoginTextField.m in Sources */,
 				8C3140961D9B5B79001C9C56 /* BRMeCollectionViewCell.m in Sources */,
 				8C3649F61D869575006973E5 /* BRPublishViewController.m in Sources */,
 				8C3649E71D869435006973E5 /* BRBaseViewController.m in Sources */,
 				8C364A041D87EC33006973E5 /* BRTabBar.m in Sources */,
+				8C945CAB1DAB915600B63752 /* BRJokeTableViewController.m in Sources */,
 				8C6B1E831D9BC13E00B1DD06 /* BRWebViewController.m in Sources */,
 				8C06854A1D98CD6800AA7157 /* BRShareBtn.m in Sources */,
 				8CDF3BFA1D91314200A6D3EF /* UIImage+BRCategory.m in Sources */,

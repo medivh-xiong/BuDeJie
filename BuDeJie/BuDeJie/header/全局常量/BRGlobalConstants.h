@@ -4,23 +4,25 @@
 //
 //  Created by 熊欣 on 16/9/13.
 //  Copyright © 2016年 熊欣. All rights reserved.
-//
+//  全局常量
 
-#import <Foundation/Foundation.h>
-
-
-@interface BRGlobalConstants : NSObject
+#import <UIKit/UIKit.h>
 
 
 /** 全局字体大小*/
-extern NSInteger const BRFontSize;
+UIKIT_EXTERN NSInteger const BRFontSize;
 
-extern NSInteger const BRStatusBarHeight;
+/** 状态栏高度*/
+UIKIT_EXTERN NSInteger const BRStatusBarHeight;
 
-extern NSInteger const BRNavBarHeight;
+/** 导航栏高度*/
+UIKIT_EXTERN NSInteger const BRNavBarHeight;
 
-extern NSInteger const BRTabBarHeight;
+/** 状态栏+导航栏高度*/
+UIKIT_EXTERN NSInteger const BRTopBarHeight;
+
+/** 底部栏高度*/
+UIKIT_EXTERN NSInteger const BRTabBarHeight;
 
 
 
-@end

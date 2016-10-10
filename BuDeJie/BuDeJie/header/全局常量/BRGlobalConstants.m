@@ -8,16 +8,15 @@
 
 #import "BRGlobalConstants.h"
 
-@implementation BRGlobalConstants
-
 
 NSInteger const BRFontSize        = 16;
 
+NSInteger const BRStatusBarHeight = 20;
+
 NSInteger const BRNavBarHeight    = 44;
+
+NSInteger const BRTopBarHeight    = 64;
 
 NSInteger const BRTabBarHeight    = 49;
 
-NSInteger const BRStatusBarHeight = 20;
 
-
-@end
