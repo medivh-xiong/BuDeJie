@@ -6,8 +6,9 @@
 //  Copyright © 2016年 熊欣. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BRBaseTableViewController.h"
 
-@interface BRVideoTableViewController : UITableViewController
+
+@interface BRVideoTableViewController : BRBaseTableViewController
 
 @end

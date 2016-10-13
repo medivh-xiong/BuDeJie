@@ -24,5 +24,11 @@ UIKIT_EXTERN NSInteger const BRTopBarHeight;
 /** 底部栏高度*/
 UIKIT_EXTERN NSInteger const BRTabBarHeight;
 
+/** 底部栏按钮重复点击*/
+UIKIT_EXTERN NSString *const BRTabBarBtnRepatClickNotification;
+
+/** 首页的按钮重复点击*/
+UIKIT_EXTERN NSString *const BRTitleBtnRepatClickNotification;
+
 
 

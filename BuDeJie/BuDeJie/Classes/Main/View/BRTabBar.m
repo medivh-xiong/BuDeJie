@@ -12,6 +12,9 @@
 
 @property (nonatomic, readwrite, strong) UIButton *plusBtn;
 
+/** 上一次被点击的btn*/
+@property (nonatomic, readwrite, weak) UIControl *preTabBarBtn;
+
 @end
 
 
@@ -55,9 +58,12 @@
     NSInteger index     = 0;
     
     
-    for (UIView *itemView in self.subviews) {
+    for (UIControl *itemView in self.subviews) {
         
         if ([itemView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            
+            /** layout这个方法可能调用多次，因此要做多个判断*/
+            if (index == 0 && !self.preTabBarBtn) self.preTabBarBtn = itemView;
             
             if (index == 2) {
                 index += 1;
@@ -66,13 +72,27 @@
             itemView.frame = CGRectMake(index * width, 0, width, height);
             
             index ++;
+    
+            
+            [itemView addTarget:self action:@selector(tabBarBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         }
         
     }
     
-    
     self.plusBtn.center = CGPointMake(self.width * 0.5, self.height * 0.5);
     
+}
+
+
+
+- (void)tabBarBtnClick:(UIControl *)tabBarBtn
+{
+    if (self.preTabBarBtn == tabBarBtn) {
+       [[NSNotificationCenter defaultCenter] postNotificationName:BRTabBarBtnRepatClickNotification object:nil];
+    }
+    
+    self.preTabBarBtn = tabBarBtn;
+ 
 }
 
 

@@ -19,4 +19,7 @@ NSInteger const BRTopBarHeight    = 64;
 
 NSInteger const BRTabBarHeight    = 49;
 
+NSString *const BRTabBarBtnRepatClickNotification = @"BRTabBarBtnRepatClickNotification";
+
+NSString *const BRTitleBtnRepatClickNotification  = @"BRTitleBtnRepatClickNotificatio";
 

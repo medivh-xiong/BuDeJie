@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BRAdDataModel : NSObject
 
+@interface BRAdDataModel : NSObject
 
 /** 广告的图片*/
 @property (nonatomic, readwrite, strong) NSString *w_picurl;

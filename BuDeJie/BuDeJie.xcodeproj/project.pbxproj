@@ -47,6 +47,7 @@
 		8C945CAC1DAB915600B63752 /* BRPhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CA01DAB915600B63752 /* BRPhotoTableViewController.m */; };
 		8C945CAD1DAB915600B63752 /* BRSoundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CA21DAB915600B63752 /* BRSoundTableViewController.m */; };
 		8C945CAE1DAB915600B63752 /* BRVideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CA41DAB915600B63752 /* BRVideoTableViewController.m */; };
+		8C945CB21DABA54C00B63752 /* BRBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CB11DABA54C00B63752 /* BRBaseTableViewController.m */; };
 		8CCB7D301D9B51D100A2081C /* BRMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */; };
 		8CD25E341D9B8F0D00AB1CD4 /* BRMeSquareListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */; };
 		8CD57D321D9E4A340008AFDB /* BRFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD57D311D9E4A340008AFDB /* BRFileTools.m */; };
@@ -144,6 +145,8 @@
 		8C945CA31DAB915600B63752 /* BRVideoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRVideoTableViewController.h; sourceTree = "<group>"; };
 		8C945CA41DAB915600B63752 /* BRVideoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRVideoTableViewController.m; sourceTree = "<group>"; };
 		8C945CAF1DAB918600B63752 /* BREssence_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREssence_Header.h; sourceTree = "<group>"; };
+		8C945CB01DABA54C00B63752 /* BRBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBaseTableViewController.h; sourceTree = "<group>"; };
+		8C945CB11DABA54C00B63752 /* BRBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseTableViewController.m; sourceTree = "<group>"; };
 		8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BRMeViewController.storyboard; sourceTree = "<group>"; };
 		8CD25E321D9B8F0D00AB1CD4 /* BRMeSquareListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMeSquareListModel.h; sourceTree = "<group>"; };
 		8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMeSquareListModel.m; sourceTree = "<group>"; };
@@ -402,6 +405,8 @@
 				8C3649DD1D869253006973E5 /* AppDelegate.m */,
 				8C3649E51D869435006973E5 /* BRBaseViewController.h */,
 				8C3649E61D869435006973E5 /* BRBaseViewController.m */,
+				8C945CB01DABA54C00B63752 /* BRBaseTableViewController.h */,
+				8C945CB11DABA54C00B63752 /* BRBaseTableViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -571,14 +576,14 @@
 			children = (
 				8C945C9B1DAB915600B63752 /* BRAllTableViewController.h */,
 				8C945C9C1DAB915600B63752 /* BRAllTableViewController.m */,
+				8C945CA31DAB915600B63752 /* BRVideoTableViewController.h */,
+				8C945CA41DAB915600B63752 /* BRVideoTableViewController.m */,
 				8C945C9D1DAB915600B63752 /* BRJokeTableViewController.h */,
 				8C945C9E1DAB915600B63752 /* BRJokeTableViewController.m */,
 				8C945C9F1DAB915600B63752 /* BRPhotoTableViewController.h */,
 				8C945CA01DAB915600B63752 /* BRPhotoTableViewController.m */,
 				8C945CA11DAB915600B63752 /* BRSoundTableViewController.h */,
 				8C945CA21DAB915600B63752 /* BRSoundTableViewController.m */,
-				8C945CA31DAB915600B63752 /* BRVideoTableViewController.h */,
-				8C945CA41DAB915600B63752 /* BRVideoTableViewController.m */,
 			);
 			path = ChildController;
 			sourceTree = "<group>";
@@ -840,6 +845,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C945CB21DABA54C00B63752 /* BRBaseTableViewController.m in Sources */,
 				8CE7BACE1D8E93C200DDED24 /* BRGlobalConstants.m in Sources */,
 				8C3649F01D869542006973E5 /* BRMeViewController.m in Sources */,
 				8C3649F31D869555006973E5 /* BRNewViewController.m in Sources */,

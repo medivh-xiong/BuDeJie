@@ -1,4 +1,4 @@
-//
+
 //  BREssenceViewController.m
 //  BuDeJie
 //
@@ -10,7 +10,7 @@
 #import "BREssence_Header.h"
 
 
-@interface BREssenceViewController()
+@interface BREssenceViewController()<UIScrollViewDelegate>
 
 /** 标题栏*/
 @property (nonatomic, readwrite, weak) UIView   *titleView;
@@ -19,6 +19,9 @@
 @property (nonatomic, readwrite, weak) UIButton *selectedBtn;
 
 @property (nonatomic, readwrite, weak) UIView   *lineView;
+
+/** 内容滚动视图*/
+@property (nonatomic, readwrite, weak) UIScrollView *contentScrollView;
 
 @end
 
@@ -30,6 +33,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // ----0.添加子控制器
+    [self addChildViewControllers];
     
     // ----1.设置导航栏的样式
     [self setNavBarItem];
@@ -43,8 +49,24 @@
     [self setTitleView];
     
     
-    // ----4.添加子控制器
-    [self addChildViewControllers];
+    // ----添加全部界面View为第一个显示的View
+    [self addChildViewToScrollView:0];
+    
+}
+
+
+
+- (void)addChildViewControllers
+{
+    [self addChildViewController:[[BRAllTableViewController alloc] init]];
+    
+    [self addChildViewController:[[BRVideoTableViewController alloc] init]];
+    
+    [self addChildViewController:[[BRPhotoTableViewController alloc] init]];
+    
+    [self addChildViewController:[[BRJokeTableViewController alloc] init]];
+    
+    [self addChildViewController:[[BRSoundTableViewController alloc] init]];
     
 }
 
@@ -76,25 +98,28 @@
 {
     UIScrollView *contentView = ({
         
-        UIScrollView *contentView   = [[UIScrollView alloc] init];
+        UIScrollView *contentView                  = [[UIScrollView alloc] init];
+
+        contentView.frame                          = self.view.bounds;
+
+        contentView.showsVerticalScrollIndicator   = NO;
+
+        contentView.showsHorizontalScrollIndicator = NO;
         
-        contentView.frame           = self.view.bounds;
+        contentView.pagingEnabled                  = YES;
+
+        contentView.contentSize                    = CGSizeMake(titleBtnCount * contentView.width, 0);
         
-        contentView.backgroundColor = [UIColor greenColor];
+        [self.view addSubview:contentView];
         
         contentView;
     });
-    
-    [self.view addSubview:contentView];
-    
-    
-    /** 添加子控制器的view*/
-    for (NSUInteger i = 0; i < self.childViewControllers.count; i++) {
-        
-        UIView *childView = self.childViewControllers[i].view;
-        
-        [contentView addSubview:childView];
-    }
+
+    self.contentScrollView                    = contentView;
+
+    self.contentScrollView.delegate           = self;
+
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
 }
 
@@ -129,22 +154,6 @@
 
 
 
-- (void)addChildViewControllers
-{
-    [self addChildViewController:[[BRAllTableViewController alloc] init]];
-    
-    [self addChildViewController:[[BRVideoTableViewController alloc] init]];
-    
-    [self addChildViewController:[[BRPhotoTableViewController alloc] init]];
-    
-    [self addChildViewController:[[BRJokeTableViewController alloc] init]];
-    
-    [self addChildViewController:[[BRSoundTableViewController alloc] init]];
-    
-}
-
-
-
 /** 添加标题栏的按钮*/
 - (void)addTitleViewBtn
 {
@@ -157,6 +166,8 @@
         UIButton *btn = ({
             
             UIButton *btn       = [UIButton buttonWithType:UIButtonTypeCustom];
+            
+            btn.tag             = i;
 
             btn.frame           = CGRectMake(i * btnW, 0, btnW, titleViewH);
             
@@ -217,6 +228,24 @@
 
 
 
+#pragma mark - scrollView代理
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSInteger index = scrollView.contentOffset.x / scrollView.width;
+    
+    UIButton *btn   = self.titleView.subviews[index];
+    
+    [self titleBtnClick:btn];
+}
+
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
+}
+
+
 #pragma mark - 监听点击事件
 - (void)touchu
 {
@@ -234,11 +263,18 @@
 
 - (void)titleBtnClick:(UIButton *)titleBtn
 {
-    /** 设置btn点击后的状态属性*/
+    // ----如果是重复点击，就添加通知
+    if (titleBtn == self.selectedBtn) {
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:BRTitleBtnRepatClickNotification object:nil];
+    }
+    
+    // ----设置btn点击后的状态属性
     [self setTitleBtnState:titleBtn];
     
-    CGFloat lineW = [titleBtn.currentTitle sizeWithAttributes:@{NSFontAttributeName:titleBtn.titleLabel.font}].width;
+    CGFloat lineW   = [titleBtn.currentTitle sizeWithAttributes:@{NSFontAttributeName:titleBtn.titleLabel.font}].width;
     
+    NSInteger index = titleBtn.tag;
     
     // ----设置横线的动画效果
     [UIView animateWithDuration:0.25f animations:^{
@@ -247,7 +283,31 @@
         
         self.lineView.centerX = titleBtn.centerX - 1.5f;
         
+        /** 滚动视图当前显示的View*/
+        CGFloat scrollOffSetX = self.contentScrollView.width * titleBtn.tag;
+        
+        self.contentScrollView.contentOffset = CGPointMake(scrollOffSetX, self.contentScrollView.contentOffset.y);
+        
+    }completion:^(BOOL finished) {
+        
+        [self addChildViewToScrollView:index];
+        
     }];
+    
+    for (NSUInteger i = 0; i < self.childViewControllers.count; i++) {
+        
+        UIViewController *childVC = self.childViewControllers[i];
+       
+        if (![childVC isViewLoaded] ) continue;
+        
+        UIScrollView *scrollV = (UIScrollView *)childVC.view;
+        
+        if (![scrollV isKindOfClass:[UIScrollView class]]) continue;
+        
+        scrollV.scrollsToTop = (i == index);
+        
+    }
+    
 }
 
 
@@ -268,6 +328,21 @@
 
 
 
+#pragma mark - 其他
+- (void)addChildViewToScrollView:(NSInteger)index
+{
+    // ----添加子控制器的view
+    UIView *childView = self.childViewControllers[index].view;
+    
+    if (childView.superview) return;
+    
+    
+    /** 这里有2种写法*/
+    childView.frame   = self.contentScrollView.bounds;
+//    childView.frame   = CGRectMake(index * self.contentScrollView.width, 0, self.contentScrollView.width, self.contentScrollView.height);
+    
+    [self.contentScrollView addSubview:childView];
+}
 
 
 @end

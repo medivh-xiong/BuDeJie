@@ -61,7 +61,7 @@ static NSString * const cellID = @"BRSubTagCell";
     
     [SVProgressHUD dismiss];
 
-     BRNetTools *sharedTools         = [BRNetTools sharedNetTools];
+    BRNetTools *sharedTools         = [BRNetTools sharedNetTools];
     
     [sharedTools.tasks makeObjectsPerformSelector:@selector(cancel)];
     
@@ -86,10 +86,10 @@ static NSString * const cellID = @"BRSubTagCell";
 //    }
     
     // ----方法2
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
+    self.tableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
+
     self.tableView.backgroundColor = [UIColor colorWithRed:220 / 255.0 green:220 / 255.0 blue:221 / 255.0 alpha:1.0];
-    
+
     // ----显示hud
     [SVProgressHUD showWithStatus:@"正在加载ing....."];
     
@@ -157,16 +157,16 @@ static NSString * const cellID = @"BRSubTagCell";
 #pragma mark - tableView的代理方法
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    BRSubTagViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    BRSubTagViewCell *cell                      = [tableView dequeueReusableCellWithIdentifier:cellID];
 
-    BRSubTagModel *item    = self.modelArray[indexPath.row];
+    BRSubTagModel *item                         = self.modelArray[indexPath.row];
 
-    cell.item              = item;
-    
-    cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
-    
+    cell.item                                   = item;
+
+    cell.selectedBackgroundView                 = [[UIView alloc] initWithFrame:cell.frame];
+
     cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:235 / 255.0 green:235 / 255.0 blue:235 / 255.0 alpha:1.0];
-    
+
     return  cell;
 }
 

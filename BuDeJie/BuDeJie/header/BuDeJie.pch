@@ -69,5 +69,7 @@
 #endif
 /** 打印*/
 
+#define BRFUNC  BRLog(@"%s", __func__);
+
 
 #endif /* BuDeJie_pch */

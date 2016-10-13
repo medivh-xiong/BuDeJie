@@ -16,12 +16,14 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     
     // ----设置跟控制器
     [self setRootViewController];
     
     return YES;
+    
 }
 
 
@@ -35,6 +37,7 @@
     self.window.rootViewController = adVC;
 
     [self.window makeKeyAndVisible];
+    
 }
 
 @end

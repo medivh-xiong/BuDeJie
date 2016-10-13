@@ -143,8 +143,8 @@
 #pragma mark - 点击广告的跳转事件
 - (void)tapAd
 {
-    NSURL *url = [NSURL URLWithString:self.dataModel.ori_curl];
-    
+    NSURL *url                 = [NSURL URLWithString:self.dataModel.ori_curl];
+
     UIApplication *application = [UIApplication sharedApplication];
     
     if ([application canOpenURL:url]) {
@@ -170,23 +170,22 @@
 }
 
 
+
 #pragma mark - 点击跳过按钮事件
 /** 跳过广告进入主界面*/
 - (IBAction)jumpAD:(id)sender
 {
-    BRMainViewController *mainVC = [[BRMainViewController alloc] init];
-   
+    BRMainViewController *mainVC                      = [[BRMainViewController alloc] init];
+
     [UIApplication sharedApplication].statusBarHidden = NO;
     // ----这里要把定时器销毁
     [_timer invalidate];
-    
+
     /** 这里置为空,是因为在timeChange方法里使用self调用了点击方法，导致没有释放掉*/
-    _timer = nil;
-    
-    BRAPPLICATION.keyWindow.rootViewController = mainVC;
+    _timer                                            = nil;
+
+    BRAPPLICATION.keyWindow.rootViewController        = mainVC;
 }
-
-
 
 
 @end

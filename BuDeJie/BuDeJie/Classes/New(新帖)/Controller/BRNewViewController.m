@@ -18,6 +18,16 @@
     [super viewDidLoad];
     // ----设置导航栏的样式
     [self setNavBarItem];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(touchu) name:BRTabBarBtnRepatClickNotification object:nil];
+    
+}
+
+- (void)touchu
+{
+    if (!self.view.window) return;
+    
+    BRFUNC
 }
 
 
