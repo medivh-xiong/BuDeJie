@@ -17,7 +17,14 @@
     UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
     
     // ----2.描述裁剪区域
-    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, image.size.width, image.size.height) cornerRadius:16.0f];
+    UIBezierPath *path;
+    
+    if (radius == 0) {
+        path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    }else {
+        path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, image.size.width, image.size.height) cornerRadius:16.0f];
+    }
+    
     
     // ----3.设置裁剪区域
     [path addClip];
@@ -32,6 +39,13 @@
     UIGraphicsEndImageContext();
     
     return image;
+}
+
+
+
++ (UIImage *)imageWithCircle:(UIImage *)image
+{
+    return [UIImage imageWithCornerRadius:0 image:image];
 }
 
 

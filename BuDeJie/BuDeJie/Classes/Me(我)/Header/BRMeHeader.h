@@ -17,8 +17,6 @@
 #import "YYModel.h"
 
 
-#define BRME_URL @"http://api.budejie.com/api/api_open.php"
-
 
 /** cell的id*/
 static NSString * const cellID = @"BRMeCell";

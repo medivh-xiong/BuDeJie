@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+/** 网络请求公共地址*/
+UIKIT_EXTERN NSString *const BRBaseUrl;
 
 /** 全局字体大小*/
 UIKIT_EXTERN NSInteger const BRFontSize;
@@ -29,6 +31,13 @@ UIKIT_EXTERN NSString *const BRTabBarBtnRepatClickNotification;
 
 /** 首页的按钮重复点击*/
 UIKIT_EXTERN NSString *const BRTitleBtnRepatClickNotification;
+
+/** cell之间共用间距*/
+UIKIT_EXTERN CGFloat   const BRMargin;
+
+
+
+
 
 
 

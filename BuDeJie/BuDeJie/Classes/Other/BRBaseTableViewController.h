@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MJRefresh.h"
+#import "BRNetTools.h"
 
 @interface BRBaseTableViewController : UITableViewController
 

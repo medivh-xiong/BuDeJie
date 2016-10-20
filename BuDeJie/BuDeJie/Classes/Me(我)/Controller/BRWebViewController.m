@@ -97,15 +97,15 @@
     
     if (_baseNav.loadProgress.progress >= 0.4) {
         
-        // ----如果获得到的网页标题栏为空，则不赋值
-        if (![self.webView.title isEqualToString:@""]) {
-            self.title = self.webView.title;
-        }
-    
         // ----如果进度条到头，就把它隐藏
         if (_baseNav.loadProgress.progress >= 1.0) {
             _baseNav.loadProgress.hidden = YES;
         }
+    }
+    
+    // ----如果获得到的网页标题栏为空，则不赋值
+    if (![self.webView.title isEqualToString:@""]) {
+        self.title = self.webView.title;
     }
     
     

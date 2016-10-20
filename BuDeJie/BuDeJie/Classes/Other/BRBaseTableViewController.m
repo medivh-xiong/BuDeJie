@@ -14,12 +14,18 @@
 
 @implementation BRBaseTableViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tableView.contentInset    = UIEdgeInsetsMake(BRTopBarHeight + 35, 0, BRTabBarHeight, 0);
+    self.tableView.contentInset          = UIEdgeInsetsMake(BRTopBarHeight + 35, 0, BRTabBarHeight, 0);
     
-    self.tableView.backgroundColor = [UIColor colorWithRed:230.0/255.0 green:230.0/255.0 blue:230.0/255.0 alpha:1.0];
+    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    
+    self.tableView.backgroundColor       = [UIColor colorWithRed:237.0/255.0 green:237.0/255.0 blue:237.0/255.0 alpha:1.0];
+    
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 }
 
 

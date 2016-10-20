@@ -56,6 +56,9 @@
 /*************文件管理*************/
 
 
+/** 把网络请求到的数据写成plist文件*/
+#define BRAFNWriteToPlist(fileName) [responseObject writeToFile:[NSString stringWithFormat:@"/Users/xiongxin/Desktop/%@.plist", fileName] atomically:YES];
+
 
 /** 打印*/
 #ifdef DEBUG
@@ -68,6 +71,7 @@
 
 #endif
 /** 打印*/
+
 
 #define BRFUNC  BRLog(@"%s", __func__);
 

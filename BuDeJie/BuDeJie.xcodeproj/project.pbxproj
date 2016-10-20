@@ -14,6 +14,8 @@
 		8C05F2441D915A7B0045E4CF /* BRFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C05F2431D915A7B0045E4CF /* BRFriendTrendViewController.xib */; };
 		8C05F2481D9163FE0045E4CF /* 235113-151224091S119.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C05F2471D9163FE0045E4CF /* 235113-151224091S119.jpg */; };
 		8C06854A1D98CD6800AA7157 /* BRShareBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0685491D98CD6800AA7157 /* BRShareBtn.m */; };
+		8C0A95BF1DB74262002E23E4 /* BRTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A95BD1DB74262002E23E4 /* BRTopicCell.m */; };
+		8C0A95C01DB74262002E23E4 /* BRTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C0A95BE1DB74262002E23E4 /* BRTopicCell.xib */; };
 		8C0AA7761D8FB192002CB37C /* BRAdDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0AA7751D8FB192002CB37C /* BRAdDataModel.m */; };
 		8C3140961D9B5B79001C9C56 /* BRMeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3140941D9B5B79001C9C56 /* BRMeCollectionViewCell.m */; };
 		8C3140971D9B5B79001C9C56 /* BRMeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3140951D9B5B79001C9C56 /* BRMeCollectionViewCell.xib */; };
@@ -48,6 +50,7 @@
 		8C945CAD1DAB915600B63752 /* BRSoundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CA21DAB915600B63752 /* BRSoundTableViewController.m */; };
 		8C945CAE1DAB915600B63752 /* BRVideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CA41DAB915600B63752 /* BRVideoTableViewController.m */; };
 		8C945CB21DABA54C00B63752 /* BRBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CB11DABA54C00B63752 /* BRBaseTableViewController.m */; };
+		8C9FD3DB1DB4D3C500E38B02 /* BRTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FD3DA1DB4D3C500E38B02 /* BRTopicModel.m */; };
 		8CCB7D301D9B51D100A2081C /* BRMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */; };
 		8CD25E341D9B8F0D00AB1CD4 /* BRMeSquareListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */; };
 		8CD57D321D9E4A340008AFDB /* BRFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD57D311D9E4A340008AFDB /* BRFileTools.m */; };
@@ -82,6 +85,9 @@
 		8C05F2471D9163FE0045E4CF /* 235113-151224091S119.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "235113-151224091S119.jpg"; sourceTree = "<group>"; };
 		8C0685481D98CD6800AA7157 /* BRShareBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRShareBtn.h; sourceTree = "<group>"; };
 		8C0685491D98CD6800AA7157 /* BRShareBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRShareBtn.m; sourceTree = "<group>"; };
+		8C0A95BC1DB74262002E23E4 /* BRTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTopicCell.h; sourceTree = "<group>"; };
+		8C0A95BD1DB74262002E23E4 /* BRTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTopicCell.m; sourceTree = "<group>"; };
+		8C0A95BE1DB74262002E23E4 /* BRTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRTopicCell.xib; sourceTree = "<group>"; };
 		8C0AA7741D8FB192002CB37C /* BRAdDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAdDataModel.h; sourceTree = "<group>"; };
 		8C0AA7751D8FB192002CB37C /* BRAdDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAdDataModel.m; sourceTree = "<group>"; };
 		8C0AA7781D8FB1D0002CB37C /* Advertisement_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Advertisement_Header.h; sourceTree = "<group>"; };
@@ -147,6 +153,8 @@
 		8C945CAF1DAB918600B63752 /* BREssence_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREssence_Header.h; sourceTree = "<group>"; };
 		8C945CB01DABA54C00B63752 /* BRBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBaseTableViewController.h; sourceTree = "<group>"; };
 		8C945CB11DABA54C00B63752 /* BRBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseTableViewController.m; sourceTree = "<group>"; };
+		8C9FD3D91DB4D3C500E38B02 /* BRTopicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTopicModel.h; sourceTree = "<group>"; };
+		8C9FD3DA1DB4D3C500E38B02 /* BRTopicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTopicModel.m; sourceTree = "<group>"; };
 		8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BRMeViewController.storyboard; sourceTree = "<group>"; };
 		8CD25E321D9B8F0D00AB1CD4 /* BRMeSquareListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMeSquareListModel.h; sourceTree = "<group>"; };
 		8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMeSquareListModel.m; sourceTree = "<group>"; };
@@ -599,6 +607,8 @@
 		8C945CA71DAB915600B63752 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8C9FD3D91DB4D3C500E38B02 /* BRTopicModel.h */,
+				8C9FD3DA1DB4D3C500E38B02 /* BRTopicModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -606,6 +616,9 @@
 		8C945CA81DAB915600B63752 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8C0A95BC1DB74262002E23E4 /* BRTopicCell.h */,
+				8C0A95BD1DB74262002E23E4 /* BRTopicCell.m */,
+				8C0A95BE1DB74262002E23E4 /* BRTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -781,6 +794,7 @@
 				8CE7BAC51D8E939D00DDED24 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				8C3140971D9B5B79001C9C56 /* BRMeCollectionViewCell.xib in Resources */,
 				8CE7BAC11D8E939D00DDED24 /* LaunchImage-568h@2x.png in Resources */,
+				8C0A95C01DB74262002E23E4 /* BRTopicCell.xib in Resources */,
 				8C3B85E81D9CFCFE00F69DAE /* BRSettingViewController.storyboard in Resources */,
 				8C05F2441D915A7B0045E4CF /* BRFriendTrendViewController.xib in Resources */,
 				8CE7BAC41D8E939D00DDED24 /* LaunchImage-800-667h@2x.png in Resources */,
@@ -856,6 +870,7 @@
 				8C8AFD231D9400AE002086BE /* BRShareBtnView.m in Sources */,
 				8CE7BAD41D8F76F200DDED24 /* BRNetTools.m in Sources */,
 				8C0AA7761D8FB192002CB37C /* BRAdDataModel.m in Sources */,
+				8C0A95BF1DB74262002E23E4 /* BRTopicCell.m in Sources */,
 				8CEB67E01D90C9C900DEC374 /* BRSubTagModel.m in Sources */,
 				8C3649E41D869253006973E5 /* main.m in Sources */,
 				8CEB67DD1D8FE5C600DEC374 /* BRSubTagViewController.m in Sources */,
@@ -871,6 +886,7 @@
 				8C3649E31D869253006973E5 /* AppDelegate.m in Sources */,
 				8C3B85E61D9CFCDB00F69DAE /* BRSettingViewController.m in Sources */,
 				8C945CAD1DAB915600B63752 /* BRSoundTableViewController.m in Sources */,
+				8C9FD3DB1DB4D3C500E38B02 /* BRTopicModel.m in Sources */,
 				8C05AD181D8927A300D1E113 /* BRNavigationController.m in Sources */,
 				8C7B70BC1D9924A5008C3A50 /* BRLoginTextField.m in Sources */,
 				8C3140961D9B5B79001C9C56 /* BRMeCollectionViewCell.m in Sources */,
@@ -937,7 +953,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -975,7 +991,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -992,7 +1008,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = BuDeJie/header/BuDeJie.pch;
 				INFOPLIST_FILE = BuDeJie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pateo.BuDeJie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1010,7 +1026,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = BuDeJie/header/BuDeJie.pch;
 				INFOPLIST_FILE = BuDeJie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pateo.BuDeJie;
 				PRODUCT_NAME = "$(TARGET_NAME)";

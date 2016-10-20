@@ -24,4 +24,6 @@
 + (UIImage *)imageWithCornerRadius:(CGFloat)radius image:(UIImage *)image;
 
 
++ (UIImage *)imageWithCircle:(UIImage *)image;
+
 @end

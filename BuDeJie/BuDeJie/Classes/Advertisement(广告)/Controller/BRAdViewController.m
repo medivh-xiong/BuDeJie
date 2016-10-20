@@ -114,11 +114,9 @@
 
         self.dataModel       = [BRAdDataModel yy_modelWithDictionary:adInfo];
         
-        
         // ----设置广告图片
         [self setAdvertisement:self.dataModel];
      
-        
     } failue:^(NSError *error) {
         BRLog(@"error = %@",error);
     }];

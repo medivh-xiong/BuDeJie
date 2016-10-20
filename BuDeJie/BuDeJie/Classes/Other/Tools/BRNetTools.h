@@ -10,15 +10,13 @@
 #import <Foundation/Foundation.h>
 
 
+@interface BRNetTools : AFHTTPSessionManager
+
 /** 请求方法的枚举*/
 typedef NS_ENUM(NSUInteger, BRRequsetType) {
     RequsetGET = 0,
     RequestPOST,
 };
-
-@interface BRNetTools : AFHTTPSessionManager
-
-
 
 /** 返回网络工具类的实例*/
 + (instancetype)sharedNetTools;

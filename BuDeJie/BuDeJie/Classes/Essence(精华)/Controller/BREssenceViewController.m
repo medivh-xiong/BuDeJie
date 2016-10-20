@@ -133,7 +133,7 @@
 
         titleView.frame           = CGRectMake(0, BRTopBarHeight, BRSCREEN_WIDTH, titleViewH);
 
-        titleView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.5];
+        titleView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:1.0];
         
         [self.view addSubview:titleView];
         
@@ -235,7 +235,7 @@
     
     UIButton *btn   = self.titleView.subviews[index];
     
-    [self titleBtnClick:btn];
+    [self dealBtnClickState:btn];
 }
 
 
@@ -261,6 +261,7 @@
 
 
 
+/** btn点击时候事件*/
 - (void)titleBtnClick:(UIButton *)titleBtn
 {
     // ----如果是重复点击，就添加通知
@@ -269,6 +270,15 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:BRTitleBtnRepatClickNotification object:nil];
     }
     
+    [self dealBtnClickState:titleBtn];
+    
+}
+
+
+
+/** btn点击时候处理文字内容状态*/
+- (void)dealBtnClickState:(UIButton *)titleBtn
+{
     // ----设置btn点击后的状态属性
     [self setTitleBtnState:titleBtn];
     
@@ -297,7 +307,7 @@
     for (NSUInteger i = 0; i < self.childViewControllers.count; i++) {
         
         UIViewController *childVC = self.childViewControllers[i];
-       
+        
         if (![childVC isViewLoaded] ) continue;
         
         UIScrollView *scrollV = (UIScrollView *)childVC.view;
@@ -307,7 +317,6 @@
         scrollV.scrollsToTop = (i == index);
         
     }
-    
 }
 
 
@@ -342,6 +351,7 @@
 //    childView.frame   = CGRectMake(index * self.contentScrollView.width, 0, self.contentScrollView.width, self.contentScrollView.height);
     
     [self.contentScrollView addSubview:childView];
+    
 }
 
 

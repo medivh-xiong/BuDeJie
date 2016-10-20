@@ -83,13 +83,13 @@
 /** 设置按钮的事件*/
 - (void)setting
 {
-    UIStoryboard *setStroyboard = [UIStoryboard storyboardWithName:NSStringFromClass([BRSettingViewController class]) bundle:nil];
-    
-    
+    UIStoryboard *setStroyboard        = [UIStoryboard storyboardWithName:NSStringFromClass([BRSettingViewController class]) bundle:nil];
+
+
     BRSettingViewController *settingVC = [setStroyboard instantiateInitialViewController];
 
     settingVC.hidesBottomBarWhenPushed = YES;
-    
+
     [self.navigationController pushViewController:settingVC animated:YES];
 }
 
@@ -212,7 +212,7 @@
     params[@"a"]                = @"square";
     params[@"c"]                = @"topic";
     
-    [tool httpRequest:RequsetGET urlString:BRME_URL parameters:params success:^(id responseObject) {
+    [tool httpRequest:RequsetGET urlString:BRBaseUrl parameters:params success:^(id responseObject) {
         
 //        BRLog(@"%@", responseObject);
         
@@ -308,8 +308,7 @@
 //        cell.tintColor      = [UIColor whiteColor];
 //        
 //        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-//        
-//        
+//        //        
 //    }else {
 //        [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 //        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
@@ -324,7 +323,6 @@
 //    [window makeKeyWindow];
     
 }
-
 
 
 @end
