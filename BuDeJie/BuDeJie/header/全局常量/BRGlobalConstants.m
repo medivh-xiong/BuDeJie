@@ -27,3 +27,12 @@ NSInteger const BRTabBarHeight                    = 49;
 
 CGFloat   const BRMargin                        = 10;
 
+
+NSString *const BRBaseTopicURL     = @"http://s.budejie.com/topic/list/jingxuan";
+
+NSString *const BRBaseTopicParam   = @"0-20.json";
+
+NSString *const BRBaseTopicPhone   = @"bs0315-iphone-4.4.1";
+
+
+

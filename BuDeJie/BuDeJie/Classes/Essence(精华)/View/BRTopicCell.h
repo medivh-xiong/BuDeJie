@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BRTopicModel.h"
+
+@class BRTopicModel;
 
 @interface BRTopicCell : UITableViewCell
 

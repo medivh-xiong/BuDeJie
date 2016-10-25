@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -15,7 +15,7 @@
                 <frame key="frameInset" width="320" height="234"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lk-5l-igL" userLabel="headView">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lk-5l-igL" userLabel="HeadView">
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3i5-Rf-Qf2" userLabel="头像">
                                 <constraints>
@@ -53,15 +53,16 @@
                             <constraint firstItem="dI6-gz-joe" firstAttribute="leading" secondItem="swk-AP-YMA" secondAttribute="leading" id="v3V-GI-FZ0"/>
                         </constraints>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yk-JP-mVB" userLabel="bottomView">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yk-JP-mVB" userLabel="BottomView">
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-content-line" translatesAutoresizingMaskIntoConstraints="NO" id="gA0-q8-RfR">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-content-line" translatesAutoresizingMaskIntoConstraints="NO" id="gA0-q8-RfR" userLabel="Cell-content-line">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="D83-b0-ayz"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwI-u3-NWK">
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
                                 <state key="normal" title="顶" image="mainCellDing">
@@ -72,6 +73,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIF-kp-1rv">
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
                                 <state key="normal" title="踩" image="mainCellCai">
@@ -82,6 +84,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFz-nV-vTG">
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
                                 <state key="normal" title="分享" image="mainCellShare">
@@ -92,6 +95,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEm-Zd-sbo">
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
                                 <state key="normal" title="评论" image="mainCellComment">
@@ -100,17 +104,17 @@
                                 </state>
                                 <state key="highlighted" image="mainCellCommentClick"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="btM-xj-Odj" userLabel="按钮的分割线">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="btM-xj-Odj" userLabel="按钮的分割线">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="uFE-R6-GrE"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="kDH-Vd-Msp" userLabel="按钮的分割线">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="kDH-Vd-Msp" userLabel="按钮的分割线">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="5hW-j2-rJn"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="L1C-gq-zi9" userLabel="按钮的分割线">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="L1C-gq-zi9" userLabel="按钮的分割线">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="XcV-NJ-BDN"/>
                                 </constraints>
@@ -152,27 +156,39 @@
                             <constraint firstItem="bIF-kp-1rv" firstAttribute="leading" secondItem="TwI-u3-NWK" secondAttribute="trailing" id="zuo-rL-i6R"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="066-RH-uAs" userLabel="textLabel">
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="066-RH-uAs" userLabel="TextLabel">
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rz5-2A-2vC" userLabel="CommentView">
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="wT6-GS-YHG"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="7lk-5l-igL" secondAttribute="trailing" id="10n-hu-J5L"/>
+                    <constraint firstItem="rz5-2A-2vC" firstAttribute="top" secondItem="4yk-JP-mVB" secondAttribute="bottom" constant="8" id="1Vh-DA-LQM"/>
                     <constraint firstItem="7lk-5l-igL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6Cu-Wj-fZf"/>
+                    <constraint firstAttribute="bottom" secondItem="rz5-2A-2vC" secondAttribute="bottom" constant="8" id="A0K-79-uBE"/>
+                    <constraint firstAttribute="trailing" secondItem="rz5-2A-2vC" secondAttribute="trailing" constant="10" id="JhO-Lg-UVe"/>
                     <constraint firstItem="4yk-JP-mVB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MNv-nM-tZA"/>
-                    <constraint firstAttribute="bottom" secondItem="4yk-JP-mVB" secondAttribute="bottom" id="RhE-75-j2W"/>
                     <constraint firstItem="066-RH-uAs" firstAttribute="leading" secondItem="3i5-Rf-Qf2" secondAttribute="leading" id="cp4-Jo-Mva"/>
                     <constraint firstAttribute="trailing" secondItem="4yk-JP-mVB" secondAttribute="trailing" id="i3b-vd-ibr"/>
                     <constraint firstItem="066-RH-uAs" firstAttribute="trailing" secondItem="3mC-bz-xxe" secondAttribute="trailing" id="ncr-DH-Cow"/>
                     <constraint firstItem="7lk-5l-igL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tMZ-hy-5Pu"/>
-                    <constraint firstItem="066-RH-uAs" firstAttribute="top" secondItem="7lk-5l-igL" secondAttribute="bottom" constant="10" id="yzJ-jC-jp5"/>
+                    <constraint firstItem="rz5-2A-2vC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xx8-m4-Zi5"/>
+                    <constraint firstItem="066-RH-uAs" firstAttribute="top" secondItem="7lk-5l-igL" secondAttribute="bottom" constant="5" id="yzJ-jC-jp5"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="caiBtn" destination="bIF-kp-1rv" id="4Sk-eF-gug"/>
                 <outlet property="commentBtn" destination="WEm-Zd-sbo" id="WIx-sz-t1a"/>
+                <outlet property="commentH" destination="wT6-GS-YHG" id="HeO-HM-ZZ3"/>
+                <outlet property="commentView" destination="rz5-2A-2vC" id="Gti-qw-GqU"/>
+                <outlet property="commentViewTop" destination="1Vh-DA-LQM" id="c8m-bw-Skp"/>
                 <outlet property="dingBtn" destination="TwI-u3-NWK" id="uQB-W6-Ptj"/>
                 <outlet property="myTextLabel" destination="066-RH-uAs" id="NIL-IA-0QJ"/>
                 <outlet property="nameLabel" destination="swk-AP-YMA" id="z2x-zI-aFE"/>

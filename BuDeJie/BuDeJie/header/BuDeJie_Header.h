@@ -12,4 +12,10 @@
 #import "UIView+Extension.h"
 
 
+/** 导入全局常量*/
+#import "BRGlobalConstants.h"
+
+#import "UIImageView+BRWebImage.h"
+
+
 #endif /* BuDeJie_Header_h */

@@ -26,4 +26,13 @@
 
 @property (nonatomic, readwrite, assign) CGFloat centerY;
 
+/** 快速加载xib*/
++ (instancetype)viewWithNib;
+
+
+/** 把数字转换成时分秒*/
+- (NSString *)timeFormatted:(NSInteger)totalSeconds;
+
+
+
 @end

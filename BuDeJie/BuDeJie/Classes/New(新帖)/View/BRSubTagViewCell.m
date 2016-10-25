@@ -64,11 +64,7 @@
     
 
     // ----设置标签的图片
-    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:_item.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        
-        self.iconImageView.image = [UIImage imageWithCornerRadius:8.0 image:image];
-        
-    } ];
+    [self.iconImageView BRSetHeaderImage:_item.image_list placeHolder:[UIImage imageNamed:@"defaultUserIcon"]];
     
 }
 

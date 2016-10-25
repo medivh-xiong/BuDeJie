@@ -10,6 +10,10 @@
 #import "MJRefresh.h"
 #import "BRNetTools.h"
 
+
 @interface BRBaseTableViewController : UITableViewController
+
+/** 类型*/
+@property (nonatomic, readwrite, strong) NSString *type;
 
 @end

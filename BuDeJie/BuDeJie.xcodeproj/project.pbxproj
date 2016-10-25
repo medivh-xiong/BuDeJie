@@ -34,15 +34,19 @@
 		8C364A131D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C364A121D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m */; };
 		8C3B85E61D9CFCDB00F69DAE /* BRSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B85E31D9CFCDB00F69DAE /* BRSettingViewController.m */; };
 		8C3B85E81D9CFCFE00F69DAE /* BRSettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3B85E71D9CFCFE00F69DAE /* BRSettingViewController.storyboard */; };
+		8C588A301DB9FAB6005B2AAE /* BRTopicPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C588A2F1DB9FAB6005B2AAE /* BRTopicPersonModel.m */; };
+		8C588A331DBA17B2005B2AAE /* BRTopicCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C588A321DBA17B2005B2AAE /* BRTopicCommentModel.m */; };
 		8C6B1E831D9BC13E00B1DD06 /* BRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B1E811D9BC13E00B1DD06 /* BRWebViewController.m */; };
 		8C6B1E841D9BC13E00B1DD06 /* BRWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C6B1E821D9BC13E00B1DD06 /* BRWebViewController.xib */; };
 		8C6B1E861D9BC4A300B1DD06 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6B1E851D9BC4A300B1DD06 /* WebKit.framework */; };
+		8C78D5BB1DBEFC9500FE4143 /* UILabel+BRCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C78D5BA1DBEFC9500FE4143 /* UILabel+BRCategory.m */; };
 		8C7B70BC1D9924A5008C3A50 /* BRLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B70BB1D9924A5008C3A50 /* BRLoginTextField.m */; };
 		8C7B70C21D992508008C3A50 /* UITextField+BRTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B70C11D992508008C3A50 /* UITextField+BRTextField.m */; };
 		8C8AFD1E1D93C375002086BE /* BRLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8AFD1D1D93C375002086BE /* BRLoginRegisterView.m */; };
 		8C8AFD201D93C38F002086BE /* BRLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8AFD1F1D93C38F002086BE /* BRLoginRegisterView.xib */; };
 		8C8AFD231D9400AE002086BE /* BRShareBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8AFD221D9400AE002086BE /* BRShareBtnView.m */; };
 		8C8AFD251D9400BB002086BE /* BRShareBtnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8AFD241D9400BB002086BE /* BRShareBtnView.xib */; };
+		8C8B16CE1DBF43C800D8397E /* UIImageView+BRWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B16CD1DBF43C800D8397E /* UIImageView+BRWebImage.m */; };
 		8C945CA91DAB915600B63752 /* BREssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945C991DAB915600B63752 /* BREssenceViewController.m */; };
 		8C945CAA1DAB915600B63752 /* BRAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945C9C1DAB915600B63752 /* BRAllTableViewController.m */; };
 		8C945CAB1DAB915600B63752 /* BRJokeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945C9E1DAB915600B63752 /* BRJokeTableViewController.m */; };
@@ -51,6 +55,13 @@
 		8C945CAE1DAB915600B63752 /* BRVideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CA41DAB915600B63752 /* BRVideoTableViewController.m */; };
 		8C945CB21DABA54C00B63752 /* BRBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C945CB11DABA54C00B63752 /* BRBaseTableViewController.m */; };
 		8C9FD3DB1DB4D3C500E38B02 /* BRTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9FD3DA1DB4D3C500E38B02 /* BRTopicModel.m */; };
+		8CA905611DBDDA5E007CA608 /* BRTopicImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA905601DBDDA5E007CA608 /* BRTopicImageView.m */; };
+		8CA905631DBDDA6C007CA608 /* BRTopicImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA905621DBDDA6C007CA608 /* BRTopicImageView.xib */; };
+		8CA905661DBDDFE0007CA608 /* BRVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA905651DBDDFE0007CA608 /* BRVideoModel.m */; };
+		8CA905691DBDE0FE007CA608 /* BRGifModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA905681DBDE0FE007CA608 /* BRGifModel.m */; };
+		8CA9056C1DBDE12A007CA608 /* BRImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9056B1DBDE12A007CA608 /* BRImageModel.m */; };
+		8CC61F9B1DBDBC07003040D7 /* BRTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC61F9A1DBDBC07003040D7 /* BRTopicVideoView.m */; };
+		8CC61F9F1DBDBCB6003040D7 /* BRTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC61F9E1DBDBCB6003040D7 /* BRTopicVideoView.xib */; };
 		8CCB7D301D9B51D100A2081C /* BRMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */; };
 		8CD25E341D9B8F0D00AB1CD4 /* BRMeSquareListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */; };
 		8CD57D321D9E4A340008AFDB /* BRFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD57D311D9E4A340008AFDB /* BRFileTools.m */; };
@@ -122,11 +133,17 @@
 		8C3B85E21D9CFCDB00F69DAE /* BRSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSettingViewController.h; sourceTree = "<group>"; };
 		8C3B85E31D9CFCDB00F69DAE /* BRSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSettingViewController.m; sourceTree = "<group>"; };
 		8C3B85E71D9CFCFE00F69DAE /* BRSettingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BRSettingViewController.storyboard; sourceTree = "<group>"; };
+		8C588A2E1DB9FAB6005B2AAE /* BRTopicPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTopicPersonModel.h; sourceTree = "<group>"; };
+		8C588A2F1DB9FAB6005B2AAE /* BRTopicPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTopicPersonModel.m; sourceTree = "<group>"; };
+		8C588A311DBA17B2005B2AAE /* BRTopicCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTopicCommentModel.h; sourceTree = "<group>"; };
+		8C588A321DBA17B2005B2AAE /* BRTopicCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTopicCommentModel.m; sourceTree = "<group>"; };
 		8C6B1E7F1D9BB8C900B1DD06 /* BRMeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRMeHeader.h; sourceTree = "<group>"; };
 		8C6B1E801D9BC13E00B1DD06 /* BRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRWebViewController.h; sourceTree = "<group>"; };
 		8C6B1E811D9BC13E00B1DD06 /* BRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRWebViewController.m; sourceTree = "<group>"; };
 		8C6B1E821D9BC13E00B1DD06 /* BRWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRWebViewController.xib; sourceTree = "<group>"; };
 		8C6B1E851D9BC4A300B1DD06 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8C78D5B91DBEFC9500FE4143 /* UILabel+BRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+BRCategory.h"; sourceTree = "<group>"; };
+		8C78D5BA1DBEFC9500FE4143 /* UILabel+BRCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+BRCategory.m"; sourceTree = "<group>"; };
 		8C7B70BA1D9924A5008C3A50 /* BRLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLoginTextField.h; sourceTree = "<group>"; };
 		8C7B70BB1D9924A5008C3A50 /* BRLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLoginTextField.m; sourceTree = "<group>"; };
 		8C7B70C01D992508008C3A50 /* UITextField+BRTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BRTextField.h"; sourceTree = "<group>"; };
@@ -138,6 +155,8 @@
 		8C8AFD211D9400AE002086BE /* BRShareBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRShareBtnView.h; sourceTree = "<group>"; };
 		8C8AFD221D9400AE002086BE /* BRShareBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRShareBtnView.m; sourceTree = "<group>"; };
 		8C8AFD241D9400BB002086BE /* BRShareBtnView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRShareBtnView.xib; sourceTree = "<group>"; };
+		8C8B16CC1DBF43C800D8397E /* UIImageView+BRWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+BRWebImage.h"; sourceTree = "<group>"; };
+		8C8B16CD1DBF43C800D8397E /* UIImageView+BRWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BRWebImage.m"; sourceTree = "<group>"; };
 		8C945C981DAB915600B63752 /* BREssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREssenceViewController.h; sourceTree = "<group>"; };
 		8C945C991DAB915600B63752 /* BREssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREssenceViewController.m; sourceTree = "<group>"; };
 		8C945C9B1DAB915600B63752 /* BRAllTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAllTableViewController.h; sourceTree = "<group>"; };
@@ -155,6 +174,18 @@
 		8C945CB11DABA54C00B63752 /* BRBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseTableViewController.m; sourceTree = "<group>"; };
 		8C9FD3D91DB4D3C500E38B02 /* BRTopicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTopicModel.h; sourceTree = "<group>"; };
 		8C9FD3DA1DB4D3C500E38B02 /* BRTopicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTopicModel.m; sourceTree = "<group>"; };
+		8CA9055F1DBDDA5E007CA608 /* BRTopicImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTopicImageView.h; sourceTree = "<group>"; };
+		8CA905601DBDDA5E007CA608 /* BRTopicImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTopicImageView.m; sourceTree = "<group>"; };
+		8CA905621DBDDA6C007CA608 /* BRTopicImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRTopicImageView.xib; sourceTree = "<group>"; };
+		8CA905641DBDDFE0007CA608 /* BRVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRVideoModel.h; sourceTree = "<group>"; };
+		8CA905651DBDDFE0007CA608 /* BRVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRVideoModel.m; sourceTree = "<group>"; };
+		8CA905671DBDE0FE007CA608 /* BRGifModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRGifModel.h; sourceTree = "<group>"; };
+		8CA905681DBDE0FE007CA608 /* BRGifModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRGifModel.m; sourceTree = "<group>"; };
+		8CA9056A1DBDE12A007CA608 /* BRImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRImageModel.h; sourceTree = "<group>"; };
+		8CA9056B1DBDE12A007CA608 /* BRImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRImageModel.m; sourceTree = "<group>"; };
+		8CC61F991DBDBC07003040D7 /* BRTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTopicVideoView.h; sourceTree = "<group>"; };
+		8CC61F9A1DBDBC07003040D7 /* BRTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTopicVideoView.m; sourceTree = "<group>"; };
+		8CC61F9E1DBDBCB6003040D7 /* BRTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRTopicVideoView.xib; sourceTree = "<group>"; };
 		8CCB7D2F1D9B51D100A2081C /* BRMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BRMeViewController.storyboard; sourceTree = "<group>"; };
 		8CD25E321D9B8F0D00AB1CD4 /* BRMeSquareListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMeSquareListModel.h; sourceTree = "<group>"; };
 		8CD25E331D9B8F0D00AB1CD4 /* BRMeSquareListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMeSquareListModel.m; sourceTree = "<group>"; };
@@ -501,6 +532,10 @@
 				8CDF3BF91D91314200A6D3EF /* UIImage+BRCategory.m */,
 				8C7B70C01D992508008C3A50 /* UITextField+BRTextField.h */,
 				8C7B70C11D992508008C3A50 /* UITextField+BRTextField.m */,
+				8C78D5B91DBEFC9500FE4143 /* UILabel+BRCategory.h */,
+				8C78D5BA1DBEFC9500FE4143 /* UILabel+BRCategory.m */,
+				8C8B16CC1DBF43C800D8397E /* UIImageView+BRWebImage.h */,
+				8C8B16CD1DBF43C800D8397E /* UIImageView+BRWebImage.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -609,6 +644,16 @@
 			children = (
 				8C9FD3D91DB4D3C500E38B02 /* BRTopicModel.h */,
 				8C9FD3DA1DB4D3C500E38B02 /* BRTopicModel.m */,
+				8CA905641DBDDFE0007CA608 /* BRVideoModel.h */,
+				8CA905651DBDDFE0007CA608 /* BRVideoModel.m */,
+				8CA905671DBDE0FE007CA608 /* BRGifModel.h */,
+				8CA905681DBDE0FE007CA608 /* BRGifModel.m */,
+				8CA9056A1DBDE12A007CA608 /* BRImageModel.h */,
+				8CA9056B1DBDE12A007CA608 /* BRImageModel.m */,
+				8C588A2E1DB9FAB6005B2AAE /* BRTopicPersonModel.h */,
+				8C588A2F1DB9FAB6005B2AAE /* BRTopicPersonModel.m */,
+				8C588A311DBA17B2005B2AAE /* BRTopicCommentModel.h */,
+				8C588A321DBA17B2005B2AAE /* BRTopicCommentModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -619,6 +664,12 @@
 				8C0A95BC1DB74262002E23E4 /* BRTopicCell.h */,
 				8C0A95BD1DB74262002E23E4 /* BRTopicCell.m */,
 				8C0A95BE1DB74262002E23E4 /* BRTopicCell.xib */,
+				8CC61F991DBDBC07003040D7 /* BRTopicVideoView.h */,
+				8CC61F9A1DBDBC07003040D7 /* BRTopicVideoView.m */,
+				8CC61F9E1DBDBCB6003040D7 /* BRTopicVideoView.xib */,
+				8CA9055F1DBDDA5E007CA608 /* BRTopicImageView.h */,
+				8CA905601DBDDA5E007CA608 /* BRTopicImageView.m */,
+				8CA905621DBDDA6C007CA608 /* BRTopicImageView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -782,6 +833,7 @@
 			files = (
 				8CDF3BF41D91044C00A6D3EF /* BRSubTagViewCell.xib in Resources */,
 				8C3619311D865A2F005036B2 /* LaunchScreen.storyboard in Resources */,
+				8CC61F9F1DBDBCB6003040D7 /* BRTopicVideoView.xib in Resources */,
 				8C05F2481D9163FE0045E4CF /* 235113-151224091S119.jpg in Resources */,
 				8CCB7D301D9B51D100A2081C /* BRMeViewController.storyboard in Resources */,
 				8C8AFD201D93C38F002086BE /* BRLoginRegisterView.xib in Resources */,
@@ -798,6 +850,7 @@
 				8C3B85E81D9CFCFE00F69DAE /* BRSettingViewController.storyboard in Resources */,
 				8C05F2441D915A7B0045E4CF /* BRFriendTrendViewController.xib in Resources */,
 				8CE7BAC41D8E939D00DDED24 /* LaunchImage-800-667h@2x.png in Resources */,
+				8CA905631DBDDA6C007CA608 /* BRTopicImageView.xib in Resources */,
 				8C6B1E841D9BC13E00B1DD06 /* BRWebViewController.xib in Resources */,
 				8CE7BAA61D8E77DE00DDED24 /* BRAdViewController.xib in Resources */,
 				8CE7BAC71D8E939D00DDED24 /* LaunchImage@2x.png in Resources */,
@@ -860,7 +913,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C945CB21DABA54C00B63752 /* BRBaseTableViewController.m in Sources */,
+				8CA9056C1DBDE12A007CA608 /* BRImageModel.m in Sources */,
 				8CE7BACE1D8E93C200DDED24 /* BRGlobalConstants.m in Sources */,
+				8CA905691DBDE0FE007CA608 /* BRGifModel.m in Sources */,
+				8CA905661DBDDFE0007CA608 /* BRVideoModel.m in Sources */,
 				8C3649F01D869542006973E5 /* BRMeViewController.m in Sources */,
 				8C3649F31D869555006973E5 /* BRNewViewController.m in Sources */,
 				8C945CAA1DAB915600B63752 /* BRAllTableViewController.m in Sources */,
@@ -870,23 +926,29 @@
 				8C8AFD231D9400AE002086BE /* BRShareBtnView.m in Sources */,
 				8CE7BAD41D8F76F200DDED24 /* BRNetTools.m in Sources */,
 				8C0AA7761D8FB192002CB37C /* BRAdDataModel.m in Sources */,
+				8C588A301DB9FAB6005B2AAE /* BRTopicPersonModel.m in Sources */,
 				8C0A95BF1DB74262002E23E4 /* BRTopicCell.m in Sources */,
 				8CEB67E01D90C9C900DEC374 /* BRSubTagModel.m in Sources */,
 				8C3649E41D869253006973E5 /* main.m in Sources */,
 				8CEB67DD1D8FE5C600DEC374 /* BRSubTagViewController.m in Sources */,
 				8CE7BAA51D8E77DE00DDED24 /* BRAdViewController.m in Sources */,
 				8C945CA91DAB915600B63752 /* BREssenceViewController.m in Sources */,
+				8CA905611DBDDA5E007CA608 /* BRTopicImageView.m in Sources */,
 				8C945CAC1DAB915600B63752 /* BRPhotoTableViewController.m in Sources */,
 				8CD57D321D9E4A340008AFDB /* BRFileTools.m in Sources */,
 				8C945CAE1DAB915600B63752 /* BRVideoTableViewController.m in Sources */,
 				8C8AFD1E1D93C375002086BE /* BRLoginRegisterView.m in Sources */,
+				8C78D5BB1DBEFC9500FE4143 /* UILabel+BRCategory.m in Sources */,
 				8CDF3BF31D91044C00A6D3EF /* BRSubTagViewCell.m in Sources */,
 				8C02B8271D9219EC00B7F55C /* BRLoginRegisterViewController.m in Sources */,
+				8C8B16CE1DBF43C800D8397E /* UIImageView+BRWebImage.m in Sources */,
 				8C364A131D88EB43006973E5 /* UIBarButtonItem+BRBarButtonItem.m in Sources */,
 				8C3649E31D869253006973E5 /* AppDelegate.m in Sources */,
 				8C3B85E61D9CFCDB00F69DAE /* BRSettingViewController.m in Sources */,
+				8C588A331DBA17B2005B2AAE /* BRTopicCommentModel.m in Sources */,
 				8C945CAD1DAB915600B63752 /* BRSoundTableViewController.m in Sources */,
 				8C9FD3DB1DB4D3C500E38B02 /* BRTopicModel.m in Sources */,
+				8CC61F9B1DBDBC07003040D7 /* BRTopicVideoView.m in Sources */,
 				8C05AD181D8927A300D1E113 /* BRNavigationController.m in Sources */,
 				8C7B70BC1D9924A5008C3A50 /* BRLoginTextField.m in Sources */,
 				8C3140961D9B5B79001C9C56 /* BRMeCollectionViewCell.m in Sources */,

@@ -14,7 +14,7 @@
 
 @interface BRAllTableViewController ()
 
-@property (nonatomic, readwrite, strong) NSMutableArray *modelArray;
+@property (nonatomic, readwrite, strong) NSMutableArray<BRTopicModel *> *modelArray;
 
 /** 当前最后一条帖子的描述信息，用来加载下一页数据*/
 @property (nonatomic, readwrite, strong) NSString *maxtime;
@@ -58,8 +58,6 @@ static NSString * const topickCellID = @"topicCell";
     
     // ----开始下拉刷新
     [self.tableView.mj_header beginRefreshing];
-    
-    self.tableView.rowHeight = 200;
     
 }
 
@@ -116,7 +114,7 @@ static NSString * const topickCellID = @"topicCell";
 
 
 
-#pragma mark - tablieview数据源方法
+#pragma mark - tablieView数据源方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.modelArray.count;
@@ -135,24 +133,33 @@ static NSString * const topickCellID = @"topicCell";
 
 
 
+#pragma mark - tableView代理方法
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return self.modelArray[indexPath.row].cellHeight;
+}
+
+
 #pragma mark - 加载数据
 - (void)refreshData
 {
-    // ----拼接参数
-    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-
-    dic[@"a"]                = @"list";
-    dic[@"c"]                = @"data";
-    dic[@"type"]             = @"1";
-   
-    BRNetTools *tools        = [BRNetTools sharedNetTools];
+    // ----设置当前显示数据的类型
+    self.type = @"41";
     
-    [tools httpRequest:RequsetGET urlString:BRBaseUrl parameters:dic success:^(id responseObject) {
+    // ----拼接URL
+    NSString *url     = [NSString stringWithFormat:@"%@/%@/%@/%@", BRBaseTopicURL, self.type, BRBaseTopicPhone, BRBaseTopicParam];
+    
+    
+    BRNetTools *tools = [BRNetTools sharedNetTools];
+
+    [tools httpRequest:RequsetGET urlString:url parameters:nil success:^(id responseObject) {
        
-        self.maxtime = responseObject[@"info"][@"maxtime"];
+        self.maxtime = responseObject[@"info"][@"np"];
+        
+        BRAFNWriteToPlist(@"2.plist");
         
         NSArray *arr = [NSArray yy_modelArrayWithClass:[BRTopicModel class] json:responseObject[@"list"]];
-        
+
         self.modelArray = [NSMutableArray arrayWithArray:arr];
         
         [self.tableView reloadData];
@@ -175,19 +182,15 @@ static NSString * const topickCellID = @"topicCell";
 
 - (void)loadMoreData
 {
-    // ----拼接参数
-    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    // ----拼接URL
+    NSString *url = [NSString stringWithFormat:@"%@/%@/%@/%@-20.json", BRBaseTopicURL, self.type, BRBaseTopicPhone, self.maxtime];
     
-    dic[@"a"]                = @"list";
-    dic[@"c"]                = @"data";
-    dic[@"type"]             = @"1";
-    dic[@"maxtime"]          = self.maxtime;
     
     BRNetTools *tools        = [BRNetTools sharedNetTools];
     
-    [tools httpRequest:RequsetGET urlString:BRBaseUrl parameters:dic success:^(id responseObject) {
+    [tools httpRequest:RequsetGET urlString:url parameters:url success:^(id responseObject) {
         
-        self.maxtime = responseObject[@"info"][@"maxtime"];
+        self.maxtime = responseObject[@"info"][@"np"];
         
         NSArray *arr = [NSArray yy_modelArrayWithClass:[BRTopicModel class] json:responseObject[@"list"]];
         

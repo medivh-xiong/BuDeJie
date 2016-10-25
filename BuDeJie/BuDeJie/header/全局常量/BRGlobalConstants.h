@@ -36,6 +36,14 @@ UIKIT_EXTERN NSString *const BRTitleBtnRepatClickNotification;
 UIKIT_EXTERN CGFloat   const BRMargin;
 
 
+/** 首页公有URL*/
+UIKIT_EXTERN NSString *const BRBaseTopicURL;
+
+/** 首页请求的手机参数*/
+UIKIT_EXTERN NSString *const BRBaseTopicPhone;
+
+/** 首页请求多少数据参数*/
+UIKIT_EXTERN NSString *const BRBaseTopicParam;
 
 
 

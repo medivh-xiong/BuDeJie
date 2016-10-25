@@ -137,4 +137,28 @@
     return self.frame.origin;
 }
 
+
+/** 加载xib内容*/
++ (instancetype)viewWithNib
+{
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
+}
+
+
+- (NSString *)timeFormatted:(NSInteger)totalSeconds
+{
+    
+    NSInteger seconds = totalSeconds % 60;
+    NSInteger minutes = (totalSeconds / 60) % 60;
+    NSInteger hours   = totalSeconds / 3600;
+    
+    if (hours != 0) {
+        return [NSString stringWithFormat:@"%02li:%02li:%02li",hours, minutes, seconds]; 
+    }else {
+        return [NSString stringWithFormat:@"%02li:%02li", minutes, seconds];
+    }
+   
+}
+
+
 @end

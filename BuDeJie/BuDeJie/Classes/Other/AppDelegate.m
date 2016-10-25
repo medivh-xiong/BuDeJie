@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BRAdViewController.h"
+#import "AFNetworking.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,10 @@
     
     // ----设置跟控制器
     [self setRootViewController];
+    
+    
+    // ----监听网络状态
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     
     return YES;
     
